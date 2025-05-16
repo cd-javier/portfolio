@@ -10,73 +10,54 @@
   --primary: #f9db47;
   --primary-dark: #101218;
   --primary-light: #fcfcfd;
+  --syne: 'Syne', 'Montserrat', 'Poppins', 'Arial Black', Arial, sans-serif;
+  --ibm: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-  background-color: var(--primary-dark);
-
-  font-family: 'IBM Plex Sans';
+  font-family: var(--ibm);
   font-weight: thin;
-  color: var(--primary-light);
+
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Syne';
-  font-weight: 600;
+  font-family: var(--syne);
   color: var(--primary);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
   line-height: 150%;
-}
-
-#wrapper {
-  padding: 1rem;
-  min-height: 100svh;
-  max-width: 800px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
+  font-weight: 400;
 }
 
 .large-text {
-  font-size: 1.25rem;
-}
-
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.contact-links a {
   font-size: 1.5rem;
   color: inherit;
   text-decoration: none;
   position: relative;
 }
 
-.contact-links a::after {
-  content: ' >';
-  position: relative;
-}
-
-.contact-links a:hover::before {
+a.link:hover::before {
   content: '';
 
   position: absolute;
@@ -87,6 +68,16 @@ p {
   animation: underline 0.5s;
 
   transform-origin: left;
+}
+
+.section-wrapper {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @keyframes underline {
