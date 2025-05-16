@@ -52,6 +52,10 @@ p {
 
 .large-text {
   font-size: 1.5rem;
+  line-height: 150%;
+}
+
+a.link {
   color: inherit;
   text-decoration: none;
   position: relative;
@@ -86,9 +90,101 @@ a.link:hover::before {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #wrapper {
-    justify-content: flex-start;
-    padding-top: 2rem;
+/* NAVBAR */
+
+.navbar-wrapper {
+  background-color: var(--primary-dark);
+  padding: 1rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  color: var(--primary-light);
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-logo-text {
+  font-family: var(--syne);
+  font-size: 1.5rem;
+}
+
+.nav-logo img {
+  width: 3rem;
+}
+
+.nav-toggle {
+  width: 40px;
+  height: 40px;
+}
+.nav-toggle svg {
+  fill: var(--primary-light);
+  width: 100%;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  list-style-type: none;
+}
+
+.nav-links li {
+  background: var(--primary-dark);
+  padding: 1rem;
+  text-align: right;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
   }
+
+  /* NAVBAR */
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    position: inherit;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav-links li {
+    padding: 0;
+  }
+}
+
+/* Small laptops (1024px and up) */
+@media (min-width: 1024px) {
+}
+
+/* Desktop (1280px and up) */
+@media (min-width: 1280px) {
 }

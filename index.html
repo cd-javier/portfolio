@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javier's UX & Web Design | Coming Soon</title>
-    <meta name="description" content="Crafting seamless digital experiences—website launching soon!">
+    <title>Javier Quiroga | UX &amp; Web Design</title> <!-- TO DO -->
+    <meta name="description" content=""> <!-- TO DO -->
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -15,36 +15,44 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
     <!-- SEO -->
-    <meta property="og:title" content="Javier's UX & Web Design | Coming Soon" />
-    <meta property="og:description" content="Crafting seamless digital experiences—website launching soon!" />
+    <meta property="og:title" content="" /> <!-- TO DO -->
+    <meta property="og:description" content="" /> <!-- TO DO -->
     <meta property="og:image" content="./assets/seo/og-image-index.jpg" />
     <meta property="og:url" content="https://javierquiroga.com" />
 
-    <meta name="robots" content="noindex, nofollow" /> <!-- NOT INDEXED YET -->
+    <meta name="robots" content="noindex, nofollow" /> <!-- TO DO (REMOVE) NOT INDEXED YET -->
 
 
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/home.css">
 </head>
 
 <body>
-
-    <div id="wrapper">
-        <h1>Hey, I’m Javier</h1>
-        <p class="large-text">
-            I’m a passionate UX designer and web developer, dedicated to crafting intuitive digital experiences and
-            building functional, user-first solutions. Whether it’s designing seamless interfaces or writing clean,
-            efficient code, I enjoy problem-solving and bringing ideas to life.
-        </p>
-        <p>🚧 Website under construction, see you soon! 🚧</p>
-        <nav class="contact-links">
-            <h2>Get in touch</h2>
-            <a href="#" id="copy-email">contact@javierquiroga.com</a>
-            <a href="https://www.linkedin.com/in/javier-quiroga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/cd-javier" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </nav>
+    <div class="navbar-wrapper">
+        <div class="navbar">
+            <a class="nav-logo" href="#">
+                <img src="./assets/img/logo.svg" alt="">
+                <div class="nav-logo-text">Javier Quiroga</div>
+            </a>
+            <nav>
+                <div class="nav-toggle" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>menu</title>
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+                <ul class="nav-links" id="dropdown">
+                    <li><a href="#" class="link">Design Case Studies</a></li>
+                    <li><a href="#" class="link">Dev Projects</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                    <li><a href="#" class="link">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
-    <script src="./script/copy.js"></script>
+    <!-- <script src="./script/copy.js"></script> -->
+    <script src="./script/menu.js"></script>
 </body>
 
 </html>
