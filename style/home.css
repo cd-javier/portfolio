@@ -34,6 +34,7 @@ body {
 
   animation: logo-appear 2s;
   animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 
 @keyframes logo-appear {
@@ -50,7 +51,7 @@ body {
 
   animation: hero-heading-appear 1s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 @keyframes hero-heading-appear {
@@ -74,7 +75,7 @@ h1 {
 
   animation: hero-text-appear 1s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 @keyframes hero-text-appear {
@@ -199,7 +200,7 @@ h1 {
 }
 
 .project-links a {
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: inherit;
 }
@@ -220,7 +221,7 @@ h1 {
 .about-me .link {
   color: var(--primary);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   align-self: flex-start;
 }
 
@@ -268,13 +269,15 @@ h1 {
     translate: 0;
 
     animation: logo-appear 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
   }
 
   .hero-heading {
     text-align: left;
     animation: hero-heading-appear 1.5s;
     animation-fill-mode: both;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
   }
 
   .hero-logo {
@@ -283,7 +286,7 @@ h1 {
 
   .hero-text {
     animation-duration: 1.5s;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
   }
 
   @keyframes logo-appear {
