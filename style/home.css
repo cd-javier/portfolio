@@ -48,9 +48,16 @@ body {
   text-align: center;
   font-family: var(--syne);
 
-  animation: hero-text-appear 1s;
+  animation: hero-heading-appear 1s;
   animation-fill-mode: both;
   animation-delay: 2s;
+}
+
+@keyframes hero-heading-appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
 }
 
 h1 {
@@ -264,7 +271,7 @@ h1 {
 
   .hero-heading {
     text-align: left;
-    animation: hero-heading-appear 1s;
+    animation: hero-heading-appear 1.5s;
     animation-fill-mode: both;
     animation-delay: 1.5s;
   }
@@ -274,13 +281,14 @@ h1 {
   }
 
   .hero-text {
+    animation-duration: 1.5s;
     animation-delay: 1.5s;
   }
 
   @keyframes logo-appear {
     0% {
       opacity: 0;
-      transform: translateY(100px) translateX(200px) rotate(-1turn);
+      transform: translateY(150px) translateX(200px) rotate(-1turn);
     }
 
     50% {
