@@ -10,6 +10,7 @@ function toggleDropdown() {
 }
 
 function closeDropdown(e) {
+  if (window.innerWidth >= 768) return;
   const target = e.target.closest('a');
   if (target) {
     dropdown.style.display = 'none';
