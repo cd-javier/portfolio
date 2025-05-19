@@ -51,6 +51,7 @@ h3 {
 p {
   line-height: 150%;
   font-weight: 400;
+  max-width: 800px;
 }
 
 .large-text {
