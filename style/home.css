@@ -60,6 +60,111 @@ h1 {
   fill: var(--primary-dark);
 }
 
+/* SECTIONS */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* PROJECT CARD */
+.project-card {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 0.25rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+}
+
+.project-desc {
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+.project-tags {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.project-links {
+  padding-top: 0.5rem;
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.project-links a {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-links a:only-child {
+  flex: 1;
+  text-align: center;
+}
+
+.project-links a::after {
+  content: ' >';
+}
+
+/* ABOUT ME */
+.about-me .link {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.about-me .link::after {
+  content: ' >';
+}
+
+.section.get-in-touch {
+  gap: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--primary);
+  color: var(--primary-dark);
+}
+
 /* Tablet (768px and up) */
 @media (min-width: 768px) {
   h1 {
