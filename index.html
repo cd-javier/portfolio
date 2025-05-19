@@ -8,6 +8,7 @@
     <meta name="description"
         content="I'm Javier Quiroga—UX designer and web developer blending design thinking with functional code to create smarter, better digital experiences.">
 
+    <meta name="theme-color" content="#101218">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -17,7 +18,7 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
     <!-- SEO -->
-    <meta property="og:title" content="Javier Quiroga | UX &amp; Web Design" /> <!-- TO DO -->
+    <meta property="og:title" content="Javier Quiroga | UX &amp; Web Design" />
     <meta property="og:description"
         content="I'm Javier Quiroga — a UX designer & web developer crafting thoughtful, user-first experiences. Check out my latest projects and case studies." />
     <meta property="og:image" content="./assets/seo/og-image-index.jpg" />
@@ -26,20 +27,19 @@
 
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="./style/home.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <div class="navbar-wrapper">
+    <header class="navbar-wrapper">
         <div class="navbar">
             <a class="nav-logo" href="#">
                 <img src="./assets/img/logo.svg" alt="">
                 <div class="nav-logo-text">Javier Quiroga</div>
             </a>
             <nav>
-                <div class="nav-toggle" id="nav-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <div class="nav-toggle" id="nav-toggle" role="button" tab-index="0">
+                    <svg xmlns="http:   //www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <title>menu</title>
                         <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
                     </svg>
@@ -52,220 +52,227 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- HERO -->
-    <div class="section-wrapper hero">
-        <div class="hero-logo">
-            <img src="./assets/img/logo.svg" alt="">
-            <div class="hero-heading">
-                <h1 class="hero-name">Javier Quiroga</h1>
-                <div class="hero-subheading">UX Designer &amp; Web Developer</div>
-            </div>
-        </div>
-
-
-        <div class="hero-text">
-            Blending creativity and logic to build better digital experiences.
-        </div>
-
-        <a href="#design-case-studies" class="explore">
-            <div class="explore-text">
-                explore my work
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path
-                    d="M15.0427 18.7333L11.4254 15.2667C10.9848 14.8444 10.8865 14.3613 11.1304 13.8173C11.3734 13.2724 11.808 13 12.4341 13H19.5993C20.2254 13 20.6599 13.2724 20.9029 13.8173C21.1469 14.3613 21.0485 14.8444 20.608 15.2667L16.9906 18.7333C16.8514 18.8667 16.7007 18.9667 16.5384 19.0333C16.3761 19.1 16.2022 19.1333 16.0167 19.1333C15.8312 19.1333 15.6572 19.1 15.4949 19.0333C15.3326 18.9667 15.1819 18.8667 15.0427 18.7333Z"
-                    fill="#101218" />
-            </svg>
-        </a>
-    </div>
-
-    <!-- DESIGN CASE STUDIES -->
-    <div class="section-wrapper">
-        <div class="section">
-            <div id="design-case-studies" class="anchor"></div>
-            <div class="section-title">
-                <h2>Design Case Studies</h2>
-                <div class="section-subheading">User-first design, backed by strategy and insight</div>
-            </div>
-
-            <div class="project-grid">
-
-                <div class="project-card">
-                    <a href="" aria-label="View LESGO case study">
-                        <img src="./assets/img/home/lesgo-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">LESGO</div>
-                        <div class="project-tags">usability · visual design · queer dating</div>
-                        <div class="project-desc">Revamping LESGO’s UX for its UK launch—enhancing identity, usability,
-                            and navigation with a user-centred approach.</div>
-                        <div class="project-links">
-                            <a href="">READ CASE STUDY</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="" aria-label="View Zen Life case study">
-                        <img src="./assets/img/home/zenlife-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Zen Life</div>
-                        <div class="project-tags">usability · redesign · wellness</div>
-                        <div class="project-desc">Streamlining information architecture to improve accessibility and
-                            engagement in the wellness space.</div>
-                        <div class="project-links">
-                            <a href="">READ CASE STUDY</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="" aria-label="View Grinpath case study">
-                        <img src="./assets/img/home/grinpath-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Grinpath</div>
-                        <div class="project-tags">ux research · app design · medtech</div>
-                        <div class="project-desc">Developing a MedTech solution that empowers women with fibromyalgia
-                            through gamification and personalized support.</div>
-                        <div class="project-links">
-                            <a href="">READ CASE STUDY</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- DEV PROJECTS -->
-    <div class="section-wrapper">
-        <div class="section">
-            <div id="dev-projects" class="anchor"></div>
-            <div class="section-title">
-                <h2>Dev Projects</h2>
-                <div class="section-subheading">Turning ideas into seamless, functional code</div>
-            </div>
-
-            <div class="project-grid">
-
-                <div class="project-card">
-                    <a href="https://cd-javier.github.io/battleship/" target="_blank" rel="noopener noreferrer"
-                        aria-label="View Battleship project">
-                        <img src="./assets/img/home/battleship-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Battleship</div>
-                        <div class="project-tags">javascript · smart opponent · unit testing</div>
-                        <div class="project-desc">A classic strategy game built with JavaScript, featuring an
-                            interactive UI, AI opponent, and dynamic gameplay.</div>
-                        <div class="project-links">
-                            <a href="https://github.com/cd-javier/battleship" target="_blank"
-                                rel="noopener noreferrer">GITHUB REPO</a>
-                            <a href="https://cd-javier.github.io/battleship/" target="_blank"
-                                rel="noopener noreferrer">LIVE PREVIEW</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://cd-javier.github.io/weather-app/" target="_blank" rel="noopener noreferrer"
-                        aria-label="View Weather project">
-                        <img src="./assets/img/home/weather-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Weather App</div>
-                        <div class="project-tags">javascript · api fetching · data handling</div>
-                        <div class="project-desc">A responsive weather application using API integration to display
-                            real-time forecasts with a clean and accessible interface.</div>
-                        <div class="project-links">
-                            <a href="https://github.com/cd-javier/weather-app" target="_blank"
-                                rel="noopener noreferrer">GITHUB REPO</a>
-                            <a href="https://cd-javier.github.io/weather-app/" target="_blank"
-                                rel="noopener noreferrer">LIVE PREVIEW</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://cd-javier.github.io/library/" target="_blank" rel="noopener noreferrer"
-                        aria-label="View Library Management project">
-                        <img src="./assets/img/home/library-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Library Management</div>
-                        <div class="project-tags">javascript · responsive design · localstorage</div>
-                        <div class="project-desc">A basic web app for managing a digital library, allowing users to add,
-                            edit, and remove books with a clean, minimal interface.</div>
-                        <div class="project-links">
-                            <a href="https://github.com/cd-javier/library/" target="_blank"
-                                rel="noopener noreferrer">GITHUB REPO</a>
-                            <a href="https://cd-javier.github.io/library/" target="_blank"
-                                rel="noopener noreferrer">LIVE PREVIEW</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <a href="https://cd-javier.github.io/rock-paper-scissors" target="_blank" rel="noopener noreferrer"
-                        aria-label="View Library Management project">
-                        <img src="./assets/img/home/rps-cover.png" alt="">
-                    </a>
-
-                    <div class="project-content">
-                        <div class="project-title">Rock Paper Scissors</div>
-                        <div class="project-tags">javascript · css animations · game mechanics</div>
-                        <div class="project-desc">A simple yet engaging game with intuitive UI, randomized opponent
-                            logic, and smooth animations for an interactive experience.</div>
-                        <div class="project-links">
-                            <a href="https://github.com/cd-javier/rock-paper-scissors" target="_blank"
-                                rel="noopener noreferrer">GITHUB REPO</a>
-                            <a href="https://cd-javier.github.io/rock-paper-scissors" target="_blank"
-                                rel="noopener noreferrer">LIVE PREVIEW</a>
-                        </div>
-                    </div>
+    <main>
+        <!-- HERO -->
+        <div class="section-wrapper hero">
+            <div class="hero-logo">
+                <img src="./assets/img/logo.svg" alt="Javier Quiroga logo">
+                <div class="hero-heading">
+                    <h1 class="hero-name">Javier Quiroga</h1>
+                    <div class="hero-subheading">UX Designer &amp; Web Developer</div>
                 </div>
             </div>
 
-        </div>
-    </div>
 
-    <!-- ABOUT -->
-    <div class="section-wrapper">
-        <div class="section about-me">
-            <h2>About me</h2>
-            <p class="large-text">
-                I’m a passionate UX designer and web developer, dedicated to crafting intuitive digital experiences and
-                building functional, user-first solutions. Whether it’s designing seamless interfaces or writing clean,
-                efficient code, I enjoy problem-solving and bringing ideas to life.
-            </p>
-            <a href="" class="link">More about me</a>
-        </div>
-    </div>
+            <div class="hero-text">
+                Blending creativity and logic to build better digital experiences.
+            </div>
 
-    <!-- GET IN TOUCH -->
-    <div class="section-wrapper">
-        <div class="section about-me get-in-touch">
-            <p class="large-text">
-                Get in touch (Click to copy)
-            </p>
-            <div class="link" id="copy-email">contact@javierquiroga.com</div>
+            <a href="#design-case-studies" class="explore">
+                <div class="explore-text">
+                    explore my work
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                        d="M15.0427 18.7333L11.4254 15.2667C10.9848 14.8444 10.8865 14.3613 11.1304 13.8173C11.3734 13.2724 11.808 13 12.4341 13H19.5993C20.2254 13 20.6599 13.2724 20.9029 13.8173C21.1469 14.3613 21.0485 14.8444 20.608 15.2667L16.9906 18.7333C16.8514 18.8667 16.7007 18.9667 16.5384 19.0333C16.3761 19.1 16.2022 19.1333 16.0167 19.1333C15.8312 19.1333 15.6572 19.1 15.4949 19.0333C15.3326 18.9667 15.1819 18.8667 15.0427 18.7333Z"
+                        fill="#101218" />
+                </svg>
+            </a>
         </div>
-    </div>
+
+        <!-- DESIGN CASE STUDIES -->
+        <div class="section-wrapper">
+            <div class="section">
+                <div id="design-case-studies" class="anchor"></div>
+                <div class="section-title">
+                    <h2>Design Case Studies</h2>
+                    <div class="section-subheading">User-first design, backed by strategy and insight</div>
+                </div>
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <a href="" aria-label="View LESGO case study">
+                            <img src="./assets/img/home/lesgo-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">LESGO</h3>
+                            <div class="project-tags">usability · visual design · queer dating</div>
+                            <div class="project-desc">Revamping LESGO’s UX for its UK launch—enhancing identity,
+                                usability,
+                                and navigation with a user-centred approach.</div>
+                            <div class="project-links">
+                                <a href="">READ CASE STUDY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="" aria-label="View Zen Life case study">
+                            <img src="./assets/img/home/zenlife-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Zen Life</h3>
+                            <div class="project-tags">usability · redesign · wellness</div>
+                            <div class="project-desc">Streamlining information architecture to improve accessibility and
+                                engagement in the wellness space.</div>
+                            <div class="project-links">
+                                <a href="">READ CASE STUDY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="" aria-label="View Grinpath case study">
+                            <img src="./assets/img/home/grinpath-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Grinpath</h3>
+                            <div class="project-tags">ux research · app design · medtech</div>
+                            <div class="project-desc">Developing a MedTech solution that empowers women with
+                                fibromyalgia
+                                through gamification and personalized support.</div>
+                            <div class="project-links">
+                                <a href="">READ CASE STUDY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DEV PROJECTS -->
+        <div class="section-wrapper">
+            <div class="section">
+                <div id="dev-projects" class="anchor"></div>
+                <div class="section-title">
+                    <h2>Dev Projects</h2>
+                    <div class="section-subheading">Turning ideas into seamless, functional code</div>
+                </div>
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+                        <a href="https://cd-javier.github.io/battleship/" target="_blank" rel="noopener noreferrer"
+                            aria-label="View Battleship project">
+                            <img src="./assets/img/home/battleship-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Battleship</h3>
+                            <div class="project-tags">javascript · smart opponent · unit testing</div>
+                            <div class="project-desc">A classic strategy game built with JavaScript, featuring an
+                                interactive UI, AI opponent, and dynamic gameplay.</div>
+                            <div class="project-links">
+                                <a href="https://github.com/cd-javier/battleship" target="_blank"
+                                    rel="noopener noreferrer">GITHUB REPO</a>
+                                <a href="https://cd-javier.github.io/battleship/" target="_blank"
+                                    rel="noopener noreferrer">LIVE PREVIEW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://cd-javier.github.io/weather-app/" target="_blank" rel="noopener noreferrer"
+                            aria-label="View Weather project">
+                            <img src="./assets/img/home/weather-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Weather App</h3>
+                            <div class="project-tags">javascript · api fetching · data handling</div>
+                            <div class="project-desc">A responsive weather application using API integration to display
+                                real-time forecasts with a clean and accessible interface.</div>
+                            <div class="project-links">
+                                <a href="https://github.com/cd-javier/weather-app" target="_blank"
+                                    rel="noopener noreferrer">GITHUB REPO</a>
+                                <a href="https://cd-javier.github.io/weather-app/" target="_blank"
+                                    rel="noopener noreferrer">LIVE PREVIEW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://cd-javier.github.io/library/" target="_blank" rel="noopener noreferrer"
+                            aria-label="View Library Management project">
+                            <img src="./assets/img/home/library-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Library Management</h3>
+                            <div class="project-tags">javascript · responsive design · localstorage</div>
+                            <div class="project-desc">A basic web app for managing a digital library, allowing users to
+                                add,
+                                edit, and remove books with a clean, minimal interface.</div>
+                            <div class="project-links">
+                                <a href="https://github.com/cd-javier/library/" target="_blank"
+                                    rel="noopener noreferrer">GITHUB REPO</a>
+                                <a href="https://cd-javier.github.io/library/" target="_blank"
+                                    rel="noopener noreferrer">LIVE PREVIEW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://cd-javier.github.io/rock-paper-scissors" target="_blank"
+                            rel="noopener noreferrer" aria-label="View Library Management project">
+                            <img src="./assets/img/home/rps-cover.png" alt="">
+                        </a>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Rock Paper Scissors</h3>
+                            <div class="project-tags">javascript · css animations · game mechanics</div>
+                            <div class="project-desc">A simple yet engaging game with intuitive UI, randomized opponent
+                                logic, and smooth animations for an interactive experience.</div>
+                            <div class="project-links">
+                                <a href="https://github.com/cd-javier/rock-paper-scissors" target="_blank"
+                                    rel="noopener noreferrer">GITHUB REPO</a>
+                                <a href="https://cd-javier.github.io/rock-paper-scissors" target="_blank"
+                                    rel="noopener noreferrer">LIVE PREVIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="section-wrapper">
+            <div class="section about-me">
+                <h2>About me</h2>
+                <p class="large-text">
+                    I’m a passionate UX designer and web developer, dedicated to crafting intuitive digital experiences
+                    and
+                    building functional, user-first solutions. Whether it’s designing seamless interfaces or writing
+                    clean,
+                    efficient code, I enjoy problem-solving and bringing ideas to life.
+                </p>
+                <a href="" class="link">More about me</a>
+            </div>
+        </div>
+
+        <!-- GET IN TOUCH -->
+        <div class="section-wrapper">
+            <div class="section about-me get-in-touch">
+                <p class="large-text">
+                    Get in touch (Click to copy)
+                </p>
+                <button class="link" id="copy-email">contact@javierquiroga.com</button>
+            </div>
+        </div>
+    </main>
 
     <!-- FOOTER -->
-    <div class="footer">
+    <footer class="footer">
         <div>© 2025 Javier Quiroga</div>
         <a href="https://www.linkedin.com/in/javier-quiroga/" target="_blank" rel="noopener noreferrer"
             aria-label="LinkedIn">
@@ -280,7 +287,7 @@
                     d="M17 0.737305C14.8113 0.737305 12.6441 1.1684 10.622 2.00598C8.59989 2.84356 6.76257 4.07122 5.21493 5.61886C2.08932 8.74446 0.333374 12.9837 0.333374 17.404C0.333374 24.7706 5.11671 31.0206 11.7334 33.2373C12.5667 33.3706 12.8334 32.854 12.8334 32.404V29.5873C8.21671 30.5873 7.23337 27.354 7.23337 27.354C6.46671 25.4206 5.38337 24.904 5.38337 24.904C3.86671 23.8706 5.50004 23.904 5.50004 23.904C7.16671 24.0206 8.05004 25.6206 8.05004 25.6206C9.50004 28.154 11.95 27.404 12.9 27.004C13.05 25.9206 13.4834 25.1873 13.95 24.7706C10.25 24.354 6.36671 22.9206 6.36671 16.5706C6.36671 14.7206 7.00004 13.2373 8.08337 12.054C7.91671 11.6373 7.33337 9.90397 8.25004 7.65397C8.25004 7.65397 9.65004 7.20397 12.8334 9.35397C14.15 8.98731 15.5834 8.80397 17 8.80397C18.4167 8.80397 19.85 8.98731 21.1667 9.35397C24.35 7.20397 25.75 7.65397 25.75 7.65397C26.6667 9.90397 26.0834 11.6373 25.9167 12.054C27 13.2373 27.6334 14.7206 27.6334 16.5706C27.6334 22.9373 23.7334 24.3373 20.0167 24.754C20.6167 25.2706 21.1667 26.2873 21.1667 27.8373V32.404C21.1667 32.854 21.4334 33.3873 22.2834 33.2373C28.9 31.004 33.6667 24.7706 33.6667 17.404C33.6667 15.2153 33.2356 13.048 32.398 11.0259C31.5605 9.00382 30.3328 7.1665 28.7852 5.61886C27.2375 4.07122 25.4002 2.84356 23.3781 2.00598C21.356 1.1684 19.1887 0.737305 17 0.737305Z" />
             </svg>
         </a>
-    </div>
+    </footer>
 
     <script src="./script/copy.js"></script>
     <script src="./script/menu.js"></script>

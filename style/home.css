@@ -178,6 +178,8 @@ h1 {
 
 .project-title {
   font-size: 1.5rem;
+  font-family: var(--ibm);
+  font-weight: 400;
 }
 
 .project-desc {
@@ -227,6 +229,11 @@ h1 {
 
 .about-me .link::after {
   content: ' >';
+}
+
+.about-me button.link {
+  background: none;
+  border: none;
 }
 
 .section.get-in-touch {
