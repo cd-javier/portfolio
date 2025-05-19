@@ -234,8 +234,9 @@ h1 {
 
 /* FOOTER */
 .footer {
-  background-color: var(--primary);
-  color: var(--primary-dark);
+  --footer-bg: var(--primary);
+  --footer-text: var(--primary-dark);
+  --footer-hover: var(--primary-light);
 }
 
 /* Tablet (768px and up) */

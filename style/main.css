@@ -177,6 +177,17 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+.footer svg {
+  fill: var(--footer-text);
+}
+
+.footer a svg:hover {
+  fill: var(--footer-hover);
 }
 
 /* Tablet (768px and up) */
