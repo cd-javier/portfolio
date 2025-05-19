@@ -264,15 +264,12 @@ h1 {
   .hero-text {
     font-size: 1.5rem;
   }
-
-  .hero-logo img {
-    width: 300px;
-  }
 }
 
 /* Small laptops (1024px and up) */
 @media (min-width: 1024px) {
   .hero-logo img {
+    width: 300px;
     translate: 0;
 
     animation: logo-appear 3s;
