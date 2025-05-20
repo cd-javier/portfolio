@@ -1,0 +1,11 @@
+body {
+  background-color: var(--primary);
+  color: var(--primary-dark);
+}
+
+/* FOOTER */
+.footer {
+  --footer-bg: var(--primary-dark);
+  --footer-text: var(--primary-light);
+  --footer-hover: var(--primary);
+}
