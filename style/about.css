@@ -5,7 +5,7 @@ body {
 
 .about-grid {
   display: grid;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 img.portrait {
@@ -62,4 +62,21 @@ img.portrait {
   --footer-bg: var(--primary-dark);
   --footer-text: var(--primary-light);
   --footer-hover: var(--primary);
+}
+
+/* Small laptops (1024px and up) */
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 7fr 3fr;
+  }
+
+  .about-grid p {
+    grid-column: 1 / 2;
+  }
+
+  img.portrait {
+    max-width: 100%;
+    grid-row: 1 / 7;
+    grid-column: 2 / 3;
+  }
 }
