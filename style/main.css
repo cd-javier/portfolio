@@ -46,6 +46,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 p {
@@ -71,7 +72,7 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--bd-color, var(--primary));
 
   animation: underline 0.5s;
 
