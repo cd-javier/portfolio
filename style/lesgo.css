@@ -1,7 +1,13 @@
 :root {
-  --main: #0c6154;
+  --main: #0185CC;
   --bg-odd: var(--primary-light);
-  --bg-even: #f6fbfa;
+  --bg-even: #171919;
   --text-odd: var(--primary-dark);
-  --text-even: var(--primary-dark);
+  --text-even: var(--primary-light);
+}
+
+.footer {
+  --footer-bg: var(--primary-dark);
+  --footer-text: var(--primary-light);
+  --footer-hover: var(--primary);
 }
