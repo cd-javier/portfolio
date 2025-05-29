@@ -104,6 +104,10 @@ p {
   transform: translateY(-100px);
 }
 
+button {
+  cursor: pointer;
+}
+
 /* NAVBAR */
 
 .navbar-wrapper {
