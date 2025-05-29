@@ -13,3 +13,73 @@ h3 {
   background-color: var(--bg-even);
   color: var(--text-even);
 }
+
+.project-header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.project-header img {
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-list ul {
+  list-style-type: none;
+  line-height: 150%;
+}
+
+.text-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text-body h3:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.case-study-img {
+  object-fit: contain;
+}
+
+.text-body ul {
+  padding-left: 2.5rem;
+  line-height: 150%;
+}
+
+@media (min-width: 768px) {
+  .project-header {
+    grid-template-columns: 1fr 200px;
+  }
+
+  .project-header img {
+    max-height: 400px;
+  }
+
+  .text-body p,
+  .text-body h2,
+  .text-body h3,
+  .text-body ul {
+    width: 100%;
+    max-width: 800px;
+    align-self: center;
+  }
+}
