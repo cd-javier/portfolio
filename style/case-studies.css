@@ -1,0 +1,15 @@
+h1,
+h2,
+h3 {
+  color: var(--main);
+}
+
+.section-wrapper:nth-child(odd) {
+  background-color: var(--bg-odd);
+  color: var(--text-odd);
+}
+
+.section-wrapper:nth-child(even) {
+  background-color: var(--bg-even);
+  color: var(--text-even);
+}
