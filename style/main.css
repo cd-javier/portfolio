@@ -189,6 +189,7 @@ button {
 
 .footer svg {
   fill: var(--footer-text);
+  cursor: pointer;
 }
 
 .footer a svg:hover {
