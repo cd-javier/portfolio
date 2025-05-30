@@ -52,8 +52,13 @@ h3 {
   gap: 1rem;
 }
 
-.text-body h3:not(:first-child) {
+.text-body h3:not(:first-child),
+.text-body h4:not(:first-child) {
   margin-top: 1rem;
+}
+
+.text-body h4 {
+  margin-bottom: -0.5rem;
 }
 
 .case-study-img {
@@ -77,9 +82,21 @@ h3 {
   .text-body p,
   .text-body h2,
   .text-body h3,
-  .text-body ul {
+  .text-body h4,
+  .text-body ul,
+  h2,
+  h1,
+  .large-text {
     width: 100%;
     max-width: 800px;
     align-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  h2,
+  h1,
+  .large-text {
+    max-width: none;
   }
 }
