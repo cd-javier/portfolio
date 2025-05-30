@@ -5,3 +5,9 @@
   --text-odd: var(--primary-dark);
   --text-even: var(--primary-dark);
 }
+
+.footer {
+  --footer-bg: var(--primary-dark);
+  --footer-text: var(--primary-light);
+  --footer-hover: var(--primary);
+}
