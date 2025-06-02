@@ -220,18 +220,33 @@ h1 {
 }
 
 /* ABOUT ME */
-.about-me .link {
-  color: var(--primary);
+.about-me .link,
+.contact .link {
   font-size: 1.5rem;
   font-weight: 600;
   align-self: flex-start;
 }
 
-.about-me .link::after {
+.about-me .link {
+  color: var(--primary);
+}
+
+.contact .link {
+  color: var(--primary-dark);
+  --bd-color: var(--primary-dark)
+}
+
+.about-me .link::after,
+.contact .link::after {
   content: ' >';
 }
 
-.about-me button.link {
+.contact {
+  background: var(--primary);
+  color: var(--primary-dark);
+}
+
+.contact button.link {
   background: none;
   border: none;
 }
@@ -242,8 +257,8 @@ h1 {
 
 /* FOOTER */
 .footer {
-  --footer-bg: var(--primary);
-  --footer-text: var(--primary-dark);
+  --footer-bg: var(--primary-dark);
+  --footer-text: var(--primary-light);
   --footer-hover: var(--primary-light);
 }
 
