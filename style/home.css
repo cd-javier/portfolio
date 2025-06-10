@@ -315,29 +315,7 @@ button.resume svg {
   border: none;
 }
 
-/* Tablet (768px and up) */
-@media (min-width: 768px) {
-  .about-text {
-    display: block;
-  }
-
-  .about-text .large-text:first-of-type {
-    padding-top: 1rem;
-  }
-
-  .about-text p + p {
-    margin-top: 1rem;
-  }
-
-  img.portrait {
-    float: left;
-    float: inline-start;
-    padding: 0 2rem;
-    max-width: 300px;
-  }
-}
-
-/* Small laptops (1024px and up) */
+/* Large laptops (1120px and up) */
 @media (min-width: 1120px) {
   .about-wrapper {
     display: flex;
@@ -404,6 +382,30 @@ button.resume svg {
 
   .hero-text {
     font-size: 1.5rem;
+  }
+
+  .project-wrapper + .project-wrapper,
+  .about + .about {
+    padding-top: 0;
+  }
+
+  .about-text {
+    display: block;
+  }
+
+  .about-text .large-text:first-of-type {
+    padding-top: 1rem;
+  }
+
+  .about-text p + p {
+    margin-top: 1rem;
+  }
+
+  img.portrait {
+    float: left;
+    float: inline-start;
+    padding: 0 2rem;
+    max-width: 300px;
   }
 }
 
