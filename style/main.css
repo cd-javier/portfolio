@@ -183,17 +183,17 @@ button {
   align-items: center;
   gap: 1rem;
 
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 .footer svg {
-  fill: var(--footer-text);
+  fill: var(--primary-light);
   cursor: pointer;
 }
 
 .footer a svg:hover {
-  fill: var(--footer-hover);
+  fill: var(--primary);
 }
 
 /* Tablet (768px and up) */
