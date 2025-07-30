@@ -1,0 +1,36 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite build output
+dist/
+.vite/
+
+# Local env files
+.env
+.env.*.local
+
+# Editor & OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional: Log files
+*.log
+
+# Optional: Coverage and test output
+coverage/
+*.lcov
+
+# Optional: Misc
+*.tgz
