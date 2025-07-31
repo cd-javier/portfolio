@@ -1,7 +1,0 @@
-:root {
-  --main: #25486b;
-  --bg-odd: var(--primary-light);
-  --bg-even: #eef2f7;
-  --text-odd: var(--primary-dark);
-  --text-even: var(--primary-dark);
-}
