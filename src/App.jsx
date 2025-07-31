@@ -6,11 +6,11 @@ import Lesgo from './pages/design/Lesgo';
 import Zenlife from './pages/design/Zenlife';
 import Grinpath from './pages/design/Grinpath';
 
-import { useGoatCounter } from './utils/useGoatCounter';
+import useGoatCounter from './utils/useGoatCounter';
 
 export default function App() {
   useGoatCounter();
-  
+
   return (
     <>
       <Routes>
