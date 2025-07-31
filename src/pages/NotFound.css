@@ -1,0 +1,16 @@
+main.not-found {
+  background-color: var(--primary);
+  min-height: calc(100svh - 80px - 132px);
+  display: flex;
+  align-items: center;
+}
+
+main .section-wrapper {
+  height: 100%;
+}
+
+.not-found .section {
+  color: var(--primary-dark);
+  text-align: center;
+  align-items: center;
+}
