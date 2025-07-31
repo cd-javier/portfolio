@@ -1,7 +1,7 @@
-:root {
-  --main: #25486b;
+.grinpath {
+  --main: #0c6154;
   --bg-odd: var(--primary-light);
-  --bg-even: #eef2f7;
+  --bg-even: #f6fbfa;
   --text-odd: var(--primary-dark);
   --text-even: var(--primary-dark);
 }

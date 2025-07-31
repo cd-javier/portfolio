@@ -1,0 +1,20 @@
+.footer {
+  padding: 3rem 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+
+.footer svg {
+  fill: var(--primary-light);
+  cursor: pointer;
+}
+
+.footer a svg:hover {
+  fill: var(--primary);
+}
