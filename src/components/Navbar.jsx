@@ -3,11 +3,11 @@ import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import logo from '../assets/img/logo.svg';
 
-function NavBarLink({ link, isHomePage }) {
+function NavBarLink({ link, isHomePage, handleClick }) {
   return (
     <li>
       {isHomePage ? (
-        <a href={link.src} className="link">
+        <a href={link.src} className="link" onClick={handleClick}>
           {link.name}
         </a>
       ) : (
@@ -58,7 +58,12 @@ export default function Navbar({ isHomePage }) {
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
             {links.map((link, index) => {
               return (
-                <NavBarLink link={link} isHomePage={isHomePage} key={index} />
+                <NavBarLink
+                  handleClick={() => setIsOpen(false)}
+                  link={link}
+                  isHomePage={isHomePage}
+                  key={index}
+                />
               );
             })}
           </ul>
