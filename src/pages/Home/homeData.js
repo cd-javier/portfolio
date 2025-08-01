@@ -8,7 +8,7 @@ import weatherImg from '../../assets/img/home/weather-cover.webp';
 import libraryImg from '../../assets/img/home/library-cover.webp';
 import rpsImg from '../../assets/img/home/rps-cover.webp';
 
-const designCaseStudies = [
+export const designCaseStudies = [
   {
     title: 'LESGO',
     tags: ['usability', 'visual design', 'queer dating'],
@@ -34,7 +34,7 @@ const designCaseStudies = [
     img: grinpathImg,
   },
 ];
-const devProjects = [
+export const devProjects = [
   {
     title: 'Pride Memory Game',
     tags: ['react', 'state management', 'game logic'],
@@ -82,4 +82,55 @@ const devProjects = [
   },
 ];
 
-export { designCaseStudies, devProjects };
+export const meta = {
+  title: 'Javier Quiroga | UX & Web Dev',
+  description:
+    "I'm Javier Quiroga — UX designer and web developer blending design thinking with functional code to create smarter, better digital experiences.",
+};
+
+export const og = {
+  title: 'Javier Quiroga | UX & Web Design',
+  description:
+    "I'm Javier Quiroga — a UX designer & web developer crafting thoughtful, user-first experiences. Check out my latest projects and case studies.",
+  image: 'https://javierquiroga.com/seo/og-image-index.jpg',
+  url: 'https://javierquiroga.com',
+  type: 'website',
+};
+
+export const aboutText = [
+  'Hello, I’m Javier, a London-based UX/UI Designer and Web Developer, dedicated to crafting intuitive digital experiences and building functional, user-first solutions.',
+  "With nearly a decade of experience in the service and management industries, I've developed a keen insight into user behaviours and streamlined processes, insights that now inform my approach to digital product creation.",
+  'In 2022 I gathered the courage to quit my management job and complete a UX/UI Design Bootcamp at Ironhack, finally uniting my artistic side with my technical mind and passion for human experiences. There, I learned everything about Design Thinking and found my love for interface design and usability.',
+  "Since then, I've been collaborating with various startups as a freelancer, dedicated to improving the UX of their digital products. Creating wireframes, conducting thorough UX analysis, and enhancing visual design elements, I focus on making tech more accessible and user friendly.",
+  'At the end of 2024 I started training as a Full Stack developer with The Odin Project and discovered how incredibly creative and fulfilling writing code is, how exciting a blank code editor page is with a brain full of ideas.',
+  'When I’m not immersed in Figma or VSCode, you might find me playing board games, enjoying a glass of wine, or in the kitchen making up recipes.',
+];
+
+export const aboutTimeline = [
+  { year: 1993, emoji: '👶', event: 'Born' },
+  { year: 2015, emoji: '🎓', event: 'Graduated University' },
+  { year: 2016, emoji: '🇫🇷', event: 'Moved to France' },
+  { year: 2017, emoji: '👟', event: 'Learned to tie my shoes' },
+  { year: 2019, emoji: '🇦🇺', event: 'Moved to Australia' },
+  { year: 2020, emoji: '🇬🇧', event: 'Moved to London' },
+  { year: 2021, emoji: '👨', event: 'Became General Manager' },
+  { year: 2022, emoji: '🎨', event: 'Studied UX Design' },
+  { year: 2024, emoji: '👨‍💻', event: 'Started FullStack Dev Course' },
+];
+
+export const skills = [
+  {
+    category: 'Languages',
+    subcategory: 'human',
+    items: ['Spanish - Native', 'English - Fluent', 'French - Fluent'],
+  },
+  {
+    category: 'Languages',
+    subcategory: 'programming',
+    items: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    category: 'Tools',
+    items: ['Figma', 'Adobe Creative Suite', 'VSCode', 'Git & GitHub', 'Jest'],
+  },
+];
