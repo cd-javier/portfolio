@@ -105,7 +105,7 @@ export default function Home() {
       <DefaultSection className="about">
         <a
           href="/javier-quiroga-resume-2025.pdf"
-          download="Javier Quiroga Resume.pdf"
+          target="_blank"
           className="resume"
         >
           <button className="resume">

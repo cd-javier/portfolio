@@ -28,7 +28,7 @@ const lesgoCaseStudy = {
       },
       {
         heading: 'primary target',
-        content: ['Men', 'Late 20s - Early 30s', 'London, UK'],
+        content: ['Queer men', 'Late 20s - Early 30s', 'London, UK'],
       },
     ],
     content: [
