@@ -11,28 +11,29 @@ export default function DefaultLayout({
 }) {
   const isHomePage = pageType === 'home';
 
-  useEffect(() => {
-    // Set standard meta tags
-    if (meta.title) document.title = meta.title;
-    if (meta.title) updateMetaTag('name', 'title', meta.title);
+useEffect(() => {
+  if (meta.title) document.title = meta.title;
+  
+  const tags = [
+    ['name', 'description', meta.description],
+    ['property', 'og:title', og.title],
+    ['property', 'og:description', og.description],
+    ['property', 'og:image', og.image],
+    ['property', 'og:url', og.url],
+    ['property', 'og:type', og.type],
+  ];
 
-    if (meta.description) {
-      updateMetaTag('name', 'description', meta.description);
+  tags.forEach(([attr, key, value]) => {
+    if (!value) return;
+    let tag = document.querySelector(`meta[${attr}="${key}"]`);
+    if (!tag) {
+      tag = document.createElement('meta');
+      tag.setAttribute(attr, key);
+      document.head.appendChild(tag);
     }
-
-    // Set Open Graph meta tags
-    Object.entries(og).forEach(([property, content]) => {
-      updateMetaTag('property', `og:${property}`, content);
-    });
-
-    // Cleanup if needed (optional)
-    return () => {
-      if (meta.description) removeMetaTag('name', 'description');
-      Object.keys(og).forEach((property) => {
-        removeMetaTag('property', `og:${property}`);
-      });
-    };
-  }, [meta, og]);
+    tag.setAttribute('content', value);
+  });
+}, [meta, og]);
 
   return (
     <>
