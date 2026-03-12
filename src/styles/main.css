@@ -15,13 +15,16 @@ html {
   --primary-dark: #101218;
   --primary-light: #fcfcfd;
   --syne: 'Syne', 'Montserrat', 'Poppins', 'Arial Black', Arial, sans-serif;
-  --ibm: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  --ibm:
+    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
   font-family: var(--ibm);
   font-weight: thin;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
 
   display: flex;
   flex-direction: column;

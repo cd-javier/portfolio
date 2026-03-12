@@ -1,5 +1,5 @@
 import CaseStudyLayout from '../../Layouts/CaseStudyLayout';
-import './Grinpath.css';
+import styles from './Grinpath.module.css';
 
 import grinpathCover from '../../assets/img/case-studies/grinpath/01-cover.webp';
 import persona from '../../assets/img/case-studies/grinpath/02-user-persona.webp';
@@ -53,7 +53,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'Grinpath’s founders had poured years into refining every feature, but they were so immersed that they lost sight of what users truly needed. When we first dove into the beta, we felt lost navigating its complex structure. Users, too, would struggle to access the valuable resources designed to support them. The app needed a radical rethink of its information architecture and user flow, ensuring that every interaction felt personal and empowering.',
+              "Grinpath's founders had poured years into refining every feature, but they were so immersed that they lost sight of what users truly needed. When we first dove into the beta, we felt lost navigating its complex structure. Users, too, would struggle to access the valuable resources designed to support them. The app needed a radical rethink of its information architecture and user flow, ensuring that every interaction felt personal and empowering.",
           },
         ],
       },
@@ -69,7 +69,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'Right from the kickoff with Ale, Grinpath’s CTO, we laid out our assumptions to steer our research:',
+              "Right from the kickoff with Ale, Grinpath's CTO, we laid out our assumptions to steer our research:",
           },
           {
             type: 'ul',
@@ -105,7 +105,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'The real breakthrough came when we managed to interview several women living with chronic pain. Given the challenges of securing participants for such a sensitive topic, each conversation was gold. These interviews revealed that users aren’t lacking motivation—they’re craving genuine support and understanding. Their primary goal? To reclaim their quality of life so they can be present for their loved ones. They also expressed a deep desire for a community that offers empathy, shared experiences, and even a touch of humor—a stark contrast to the negative cycles common in many existing forums.',
+              "The real breakthrough came when we managed to interview several women living with chronic pain. Given the challenges of securing participants for such a sensitive topic, each conversation was gold. These interviews revealed that users aren't lacking motivation—they're craving genuine support and understanding. Their primary goal? To reclaim their quality of life so they can be present for their loved ones. They also expressed a deep desire for a community that offers empathy, shared experiences, and even a touch of humor—a stark contrast to the negative cycles common in many existing forums.",
           },
         ],
       },
@@ -125,7 +125,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'In UX design, a user persona is a fictional character that embodies the common traits, challenges, and aspirations of your target audience. Linda isn’t a real person, but her profile represents the typical experience of our users—struggling with isolation, chronic pain, and an overwhelming need for empathy and support.',
+              "In UX design, a user persona is a fictional character that embodies the common traits, challenges, and aspirations of your target audience. Linda isn't a real person, but her profile represents the typical experience of our users—struggling with isolation, chronic pain, and an overwhelming need for empathy and support.",
           },
           {
             type: 'p',
@@ -149,14 +149,14 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'To further ground our design choices, we mapped out Linda’s journey. This exercise uncovered critical pain points—from moments of deep frustration to flashes of hope when she accessed a helpful resource. By turning these pain points into “How Might We…” opportunities, we reimagined a user experience that supports, empowers, and uplifts.',
+              'To further ground our design choices, we mapped out Linda\'s journey. This exercise uncovered critical pain points—from moments of deep frustration to flashes of hope when she accessed a helpful resource. By turning these pain points into "How Might We…" opportunities, we reimagined a user experience that supports, empowers, and uplifts.',
           },
         ],
       },
       {
         type: 'img',
         src: journey,
-        alt: 'User flow chart capturing Linda’s journey...',
+        alt: "User flow chart capturing Linda's journey...",
         className: 'case-study-img',
         style: { maxHeight: '600px' },
       },
@@ -185,7 +185,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'For our MVP, we focused on a transformative flow: when Linda is in pain, she taps an “I’m in pain” button and is presented with either a curated library of pain relief resources or an invitation to join a supportive community.',
+              'For our MVP, we focused on a transformative flow: when Linda is in pain, she taps an "I\'m in pain" button and is presented with either a curated library of pain relief resources or an invitation to join a supportive community.',
           },
         ],
       },
@@ -229,7 +229,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'Transitioning into mid-fi prototypes, we refined the layouts and information placement to ensure a kind, straightforward flow that resonated with our users’ needs.',
+              "Transitioning into mid-fi prototypes, we refined the layouts and information placement to ensure a kind, straightforward flow that resonated with our users' needs.",
           },
         ],
       },
@@ -273,7 +273,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'We distilled these insights into a mood board centered on key adjectives: friendly, scientific, calm, supportive, and trustworthy. Our mood board wasn’t an arbitrary collage—it was guided by the language Ale used in our kickoff, ensuring Grinpath’s brand voice shone through.',
+              "We distilled these insights into a mood board centered on key adjectives: friendly, scientific, calm, supportive, and trustworthy. Our mood board wasn't an arbitrary collage—it was guided by the language Ale used in our kickoff, ensuring Grinpath's brand voice shone through.",
           },
         ],
       },
@@ -310,7 +310,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'For typography, we kept Grinpath’s Barlow for bodies of text, but opted for Asap for headings, a typeface that injects a bit of fun without losing its reliability.',
+              "For typography, we kept Grinpath's Barlow for bodies of text, but opted for Asap for headings, a typeface that injects a bit of fun without losing its reliability.",
           },
         ],
       },
@@ -382,7 +382,7 @@ const grinpathCaseStudy = {
           {
             type: 'p',
             content:
-              'Reflecting on the project, securing interview participants was challenging and stretched our timeline—but every challenge taught us something invaluable. Given more time, I’d have loved to refine the hi-fi details even further. Working with Beth and Curtis was a true delight; their deep passion for UX pushed me to always strive for excellence.',
+              "Reflecting on the project, securing interview participants was challenging and stretched our timeline—but every challenge taught us something invaluable. Given more time, I'd have loved to refine the hi-fi details even further. Working with Beth and Curtis was a true delight; their deep passion for UX pushed me to always strive for excellence.",
           },
         ],
       },
@@ -400,7 +400,7 @@ const meta = {
 const og = {
   title: 'Revolutionising Fibromyalgia Management with Grinpath',
   description:
-    'Discover Javier Quiroga’s user-centered approach that transformed a complex MedTech app into a supportive, empowering tool for women managing fibromyalgia.',
+    "Discover Javier Quiroga's user-centered approach that transformed a complex MedTech app into a supportive, empowering tool for women managing fibromyalgia.",
   image: 'http://www.javierquiroga.com/seo/og-image-grinpath.jpg',
   url: 'https://javierquiroga.com/design/grinpath',
   type: 'article',
@@ -410,7 +410,7 @@ export default function Grinpath() {
   return (
     <CaseStudyLayout
       caseStudy={grinpathCaseStudy}
-      type="grinpath"
+      themeClass={styles.grinpath}
       meta={meta}
       og={og}
     />

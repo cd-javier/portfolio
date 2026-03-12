@@ -1,5 +1,5 @@
 import CaseStudyLayout from '../../Layouts/CaseStudyLayout';
-import './ZenLife.css';
+import styles from './Zenlife.module.css';
 
 import cover from '../../assets/img/case-studies/zenlife/01-cover.jpg';
 import firstSitemap from '../../assets/img/case-studies/zenlife/02-first-sitemap.webp';
@@ -49,7 +49,7 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'ZenLife had been built with passion, but the founders were so immersed in perfecting every detail that they lost sight of the user’s perspective. When I first explored the beta, I found myself wandering through confusing menus and complex features—if I could get lost, so would the users. It was clear: the app needed a major usability tweak, starting with a fresh information architecture and a clearer design approach.',
+              "ZenLife had been built with passion, but the founders were so immersed in perfecting every detail that they lost sight of the user's perspective. When I first explored the beta, I found myself wandering through confusing menus and complex features—if I could get lost, so would the users. It was clear: the app needed a major usability tweak, starting with a fresh information architecture and a clearer design approach.",
           },
         ],
       },
@@ -65,13 +65,13 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'I started with a “hands-on user testing session.” I treated my first interaction with ZenLife as a genuine exploration, mapping out features and screens without any preconceived notions. From there, I zeroed in on one of the most critical aspects: the information architecture.',
+              'I started with a "hands-on user testing session." I treated my first interaction with ZenLife as a genuine exploration, mapping out features and screens without any preconceived notions. From there, I zeroed in on one of the most critical aspects: the information architecture.',
           },
           { type: 'h3', content: 'information architecture refresh' },
           {
             type: 'p',
             content:
-              'I began by sketching the app’s initial sitemap, which felt cluttered and overwhelming.',
+              "I began by sketching the app's initial sitemap, which felt cluttered and overwhelming.",
           },
         ],
       },
@@ -123,7 +123,7 @@ const zenlifeCaseStudy = {
       {
         type: 'img',
         src: homepage,
-        alt: 'Three side-by-side screenshots of the ZenLife dashboard. The left image shows the original design with a cluttered layout dominated by a news feed. The middle image is a mid-fidelity redesign in grayscale that repositions the calendar and key features, while the right image is the final design—nearly identical to the mid-fidelity version but enhanced with a refined colour palette.',
+        alt: 'Three side-by-side screenshots of the ZenLife dashboard.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -137,14 +137,14 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'The news section now lives on a separate screen with a clear hierarchy: the latest article grabs your attention first, and once read, it fades out to keep the focus on what’s new.',
+              "The news section now lives on a separate screen with a clear hierarchy: the latest article grabs your attention first, and once read, it fades out to keep the focus on what's new.",
           },
         ],
       },
       {
         type: 'img',
         src: news,
-        alt: 'Three side-by-side interface designs comparing iterations of the ZenLife app. The first screenshot shows the same homepage as in the previous image. The new design shows a simple an minimalist news feed, separate from the homepage.',
+        alt: 'Three side-by-side interface designs comparing iterations of the ZenLife app.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -158,7 +158,7 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'Since wellness is the heart of ZenLife, I merged what were once separate “Videos” and “Wellness Services” into one cohesive Wellness section. It’s now organised into:',
+              'Since wellness is the heart of ZenLife, I merged what were once separate "Videos" and "Wellness Services" into one cohesive Wellness section. It\'s now organised into:',
           },
           {
             type: 'ul',
@@ -188,7 +188,7 @@ const zenlifeCaseStudy = {
       {
         type: 'img',
         src: wellness,
-        alt: "Two mobile screenshots of the ZenLife wellness interface. The first screenshot displays the top view with clearly defined sections for Live sessions, Wellness Programs, Your Library, and a 'Purchase More Classes' button. The second screenshot shows the same screen scrolled down to reveal additional wellness program cards below the initial viewport.",
+        alt: 'Two mobile screenshots of the ZenLife wellness interface.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -206,7 +206,7 @@ const zenlifeCaseStudy = {
       {
         type: 'img',
         src: wellnessPrograms,
-        alt: "Three aligned mobile interface iterations of the Pranayama selection screen within Wellness Programs. The first one, labeled 'current design', features four cards for different pranayamas. The second one, labeled 'mid-fidelity', features a similar screen in grayscale, but under each heading for pranayama there is a placeholder for a brief description. The third one, labeled 'high fidelity', looks exactly like the second one but colours and images have been added.",
+        alt: 'Three aligned mobile interface iterations of the Pranayama selection screen within Wellness Programs.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -220,14 +220,14 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'Originally, ZenLife featured a “Menu” with a hamburger icon that lumped together settings and other items—confusing and counterintuitive. I rebranded this as “Settings” and tucked it neatly into the profile. This change not only declutters the navbar but also mirrors familiar patterns seen in apps like Instagram and TikTok, making it easier for users to find what they need.',
+              'Originally, ZenLife featured a "Menu" with a hamburger icon that lumped together settings and other items—confusing and counterintuitive. I rebranded this as "Settings" and tucked it neatly into the profile. This change not only declutters the navbar but also mirrors familiar patterns seen in apps like Instagram and TikTok, making it easier for users to find what they need.',
           },
         ],
       },
       {
         type: 'img',
         src: profileSettings,
-        alt: "Annotated screenshot of the 'profile' section in the app. The screen looks similar to Instagram's profile grid. There's an arrow at the bottom left pointing at the navbar: 'simpler navbar', one on the bottom right: 'room for upcoming features', and one on the top right, pointing at a settings icon 'intuitive placement for users. As seen on: Instagram, TikTok, Tumblr, BeReal'",
+        alt: "Annotated screenshot of the 'profile' section in the app.",
         className: 'case-study-img',
         style: { maxHeight: '400px' },
       },
@@ -245,7 +245,7 @@ const zenlifeCaseStudy = {
       {
         type: 'img',
         src: settingsScreens,
-        alt: "Three part screenshot of the settings page. The first screen, labeled 'current design', it's a list of many unorganised features. The second screen, labeled 'mid-fidelity', presents the same screen in black and white, but this time the settings are grouped under headings like 'account settings', 'help', and 'privacy and terms'. The third screen, labeled 'high- fidelity', looks the same as the second but it follows the app's colour palette and icons.",
+        alt: 'Three part screenshot of the settings page.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -284,7 +284,7 @@ const zenlifeCaseStudy = {
       {
         type: 'img',
         src: emptyStates,
-        alt: "Four screenshots of the app. The first one, labeled 'inbox', features a gray icon in the middle and the text 'you don't have any messages. Tap the + icon to start your first conversation'. The second one, labeled 'profile' features an icon with the text 'This profile doesn't have ant posts yet'. The third one, labeled 'community', features an icon with the text 'You don't follow any connections yet. Tap the + icon to find your first connection'. And the fourth screen, labeled 'notifications', features an icon with the text 'you don't have any notifications'",
+        alt: 'Four screenshots of the app showing empty state designs.',
         className: 'case-study-img',
         style: { maxHeight: '450px' },
       },
@@ -298,7 +298,7 @@ const zenlifeCaseStudy = {
           {
             type: 'p',
             content:
-              'Convincing the client to embrace these changes wasn’t easy, but data-backed user testing made it undeniable. This project reinforced a core belief: while deep expertise is essential, keeping the user front and center is what truly drives a great experience.',
+              "Convincing the client to embrace these changes wasn't easy, but data-backed user testing made it undeniable. This project reinforced a core belief: while deep expertise is essential, keeping the user front and center is what truly drives a great experience.",
           },
           {
             type: 'p',
@@ -322,7 +322,7 @@ const og = {
   title:
     'ZenLife Unlocked: Transforming Complexity into Clarity in Wellness UX',
   description:
-    'Check out Javier Quiroga’s detailed UX transformation that turned a complex wellness app into an engaging, easy-to-use platform where clarity meets innovation.',
+    "Check out Javier Quiroga's detailed UX transformation that turned a complex wellness app into an engaging, easy-to-use platform where clarity meets innovation.",
   image: 'http://www.javierquiroga.com/seo/og-image-zenlife.jpg',
   url: 'https://javierquiroga.com/design/zenlife',
   type: 'article',
@@ -332,7 +332,7 @@ export default function Zenlife() {
   return (
     <CaseStudyLayout
       caseStudy={zenlifeCaseStudy}
-      type="zenlife"
+      themeClass={styles.zenlife}
       meta={meta}
       og={og}
     />

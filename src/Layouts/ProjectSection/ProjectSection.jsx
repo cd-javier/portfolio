@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import styles from './ProjectSection.module.css';
 
 export default function ProjectSection({
   heading,
@@ -11,21 +12,19 @@ export default function ProjectSection({
     <div className="section-wrapper project-wrapper">
       <div className="section">
         <div className="anchor" id={anchor}></div>
-        <div className="section-title">
+        <div className={styles.sectionTitle}>
           <h2>{heading}</h2>
           <div className="section-subheading">{subheading}</div>
         </div>
 
-        <div className="project-grid">
-          {projects.map((project, index) => {
-            return (
-              <ProjectCard
-                project={project}
-                isCaseStudy={isCaseStudy}
-                key={index}
-              />
-            );
-          })}
+        <div className={styles.projectGrid}>
+          {projects.map((project, index) => (
+            <ProjectCard
+              project={project}
+              isCaseStudy={isCaseStudy}
+              key={index}
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-.navbar-wrapper {
+.navbarWrapper {
   background-color: var(--primary-dark);
   padding: 1rem;
 
@@ -22,31 +22,32 @@
   text-decoration: none;
 }
 
-.nav-logo {
+.navLogo {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.nav-logo-text {
+.navLogoText {
   font-family: var(--syne);
   font-size: 1.5rem;
 }
 
-.nav-logo img {
+.navLogo img {
   width: 3rem;
 }
 
-.nav-toggle {
+.navToggle {
   width: 40px;
   height: 40px;
 }
-.nav-toggle svg {
+
+.navToggle svg {
   fill: var(--primary-light);
   width: 100%;
 }
 
-.nav-links {
+.navLinks {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -56,51 +57,23 @@
   list-style-type: none;
 }
 
-.nav-links.open {
+.navLinks.open {
   display: flex;
 }
 
-.nav-links li {
+.navLinks li {
   background: var(--primary-dark);
   padding: 1rem;
   text-align: right;
 }
 
-/* FOOTER */
-.footer {
-  padding: 3rem 1.5rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
-}
-
-.footer svg {
-  fill: var(--primary-light);
-  cursor: pointer;
-}
-
-.footer a svg:hover {
-  fill: var(--primary);
-}
-
 /* Tablet (768px and up) */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  /* NAVBAR */
-
-  .nav-toggle {
+  .navToggle {
     display: none;
   }
 
-  .nav-links {
+  .navLinks {
     position: inherit;
 
     display: flex;
@@ -108,15 +81,7 @@
     gap: 2rem;
   }
 
-  .nav-links li {
+  .navLinks li {
     padding: 0;
   }
-}
-
-/* Small laptops (1024px and up) */
-@media (min-width: 1024px) {
-}
-
-/* Desktop (1280px and up) */
-@media (min-width: 1280px) {
 }

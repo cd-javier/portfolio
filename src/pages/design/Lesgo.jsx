@@ -1,5 +1,5 @@
 import CaseStudyLayout from '../../Layouts/CaseStudyLayout';
-import './Lesgo.css';
+import styles from './Lesgo.module.css';
 
 import cover from '../../assets/img/case-studies/lesgo/01-cover.webp';
 import aesthetic from '../../assets/img/case-studies/lesgo/02-aesthetic.webp';
@@ -46,7 +46,7 @@ const lesgoCaseStudy = {
           {
             type: 'p',
             content:
-              'Even though LESGO was built with heart, it hadn’t had the luxury of a true UX makeover. With the design managed by tight-budget teams and multitasking stakeholders, it ended up with a mismatched look, clunky navigation, and some accessibility oversights. In short, it was crying out for a “facelift.” I knew it was time to simplify interactions, tidy up the visuals, and make the whole experience feel as welcoming as the community it serves.',
+              'Even though LESGO was built with heart, it hadn\'t had the luxury of a true UX makeover. With the design managed by tight-budget teams and multitasking stakeholders, it ended up with a mismatched look, clunky navigation, and some accessibility oversights. In short, it was crying out for a "facelift." I knew it was time to simplify interactions, tidy up the visuals, and make the whole experience feel as welcoming as the community it serves.',
           },
         ],
       },
@@ -62,7 +62,7 @@ const lesgoCaseStudy = {
           {
             type: 'p',
             content:
-              'I dove in with a user-first mindset, determined to blend innovation with a nod to the app’s playful origins. The aim was clear: modernise the look and feel while smoothing out usability bumps—all without compromising its uniquely queer vibe.',
+              "I dove in with a user-first mindset, determined to blend innovation with a nod to the app's playful origins. The aim was clear: modernise the look and feel while smoothing out usability bumps—all without compromising its uniquely queer vibe.",
           },
         ],
       },
@@ -82,13 +82,13 @@ const lesgoCaseStudy = {
           {
             type: 'p',
             content:
-              'The initial design felt a bit disjointed—clashing colours, inconsistent icon choices, and random corner curves that didn’t add up.',
+              "The initial design felt a bit disjointed—clashing colours, inconsistent icon choices, and random corner curves that didn't add up.",
           },
           { type: 'h4', content: 'colour pop' },
           {
             type: 'p',
             content:
-              'I kept LESGO’s signature blue but refreshed the palette with bolder off-white and off-black tones, using subtle gradients to ease eye strain and keep things modern.',
+              "I kept LESGO's signature blue but refreshed the palette with bolder off-white and off-black tones, using subtle gradients to ease eye strain and keep things modern.",
           },
         ],
       },
@@ -205,7 +205,7 @@ const lesgoCaseStudy = {
           {
             type: 'p',
             content:
-              'Feedback was overwhelming—in a good way. The “facelift” transformed LESGO into an app that’s not only visually fresh but also a breeze to use. And the journey doesn’t end here. New ideas are already on the horizon, like:',
+              'Feedback was overwhelming—in a good way. The "facelift" transformed LESGO into an app that\'s not only visually fresh but also a breeze to use. And the journey doesn\'t end here. New ideas are already on the horizon, like:',
           },
           {
             type: 'h3',
@@ -301,7 +301,7 @@ export default function Lesgo() {
   return (
     <CaseStudyLayout
       caseStudy={lesgoCaseStudy}
-      type="lesgo"
+      themeClass={styles.lesgo}
       meta={meta}
       og={og}
     />

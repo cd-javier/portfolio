@@ -1,8 +1,8 @@
-import './Footer.css';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <div>© 2025 Javier Quiroga</div>
       <a
         href="https://www.linkedin.com/in/javier-quiroga/"

@@ -1,15 +1,11 @@
-main.not-found {
+.notFound {
   background-color: var(--primary);
   min-height: calc(100svh - 80px - 132px);
   display: flex;
   align-items: center;
 }
 
-main .section-wrapper {
-  height: 100%;
-}
-
-.not-found .section {
+.notFound :global(.section) {
   color: var(--primary-dark);
   text-align: center;
   align-items: center;

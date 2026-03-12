@@ -1,6 +1,8 @@
+import styles from './ProjectCard.module.css';
+
 export default function ProjectCard({ project, isCaseStudy }) {
   return (
-    <div className="project-card">
+    <div className={styles.projectCard}>
       {isCaseStudy ? (
         <a href={project.link} aria-label={`View ${project.title} case study`}>
           <img src={project.img} alt="" />
@@ -15,11 +17,11 @@ export default function ProjectCard({ project, isCaseStudy }) {
           <img src={project.img} alt="" />
         </a>
       )}
-      <div className="project-content">
-        <h3 className="project-title">{project.title}</h3>
-        <div className="project-tags">{project.tags.join(' · ')}</div>
-        <div className="project-desc">{project.description}</div>
-        <div className="project-links">
+      <div className={styles.projectContent}>
+        <h3 className={styles.projectTitle}>{project.title}</h3>
+        <div className={styles.projectTags}>{project.tags.join(' · ')}</div>
+        <div className={styles.projectDesc}>{project.description}</div>
+        <div className={styles.projectLinks}>
           {isCaseStudy ? (
             <a
               href={project.link}

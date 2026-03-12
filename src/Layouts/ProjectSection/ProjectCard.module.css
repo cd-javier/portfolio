@@ -1,0 +1,72 @@
+.projectCard {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  border-radius: 0.25rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.projectCard:hover {
+  transform: scale(1.02);
+}
+
+.projectCard img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.projectContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-family: var(--ibm);
+  font-weight: 400;
+}
+
+.projectDesc {
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+.projectTags {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.projectLinks {
+  padding-top: 0.5rem;
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.projectLinks a {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projectLinks a:hover {
+  text-decoration: underline;
+}
+
+.projectLinks a:only-child {
+  flex: 1;
+  text-align: center;
+}
+
+.projectLinks a:only-child::after {
+  content: ' >';
+}

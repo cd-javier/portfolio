@@ -1,4 +1,4 @@
-import './Home.css';
+import styles from './Home.module.css';
 
 import DefaultLayout from '../../Layouts/DefaultLayout';
 import ProjectSection from '../../Layouts/ProjectSection/ProjectSection';
@@ -23,25 +23,23 @@ export default function Home() {
   return (
     <DefaultLayout pageType="home" meta={meta} og={og}>
       {/* HERO */}
-
-      <div className="section-wrapper hero">
-        <div className="hero-logo">
+      <div className={`section-wrapper ${styles.hero}`}>
+        <div className={styles.heroLogo}>
           <img src={logo} alt="Javier Quiroga logo" />
-          <div className="hero-heading">
-            <h1 className="hero-name">Javier Quiroga</h1>
-            <div className="hero-subheading">
+          <div className={styles.heroHeading}>
+            <h1>{`Javier Quiroga`}</h1>
+            <div className={styles.heroSubheading}>
               UX Designer &amp; Web Developer
             </div>
           </div>
         </div>
 
-        <div className="hero-text">
+        <div className={styles.heroText}>
           Blending creativity and logic to build better digital experiences.
         </div>
 
-        <a href="#design-case-studies" className="explore">
-          <div className="explore-text">explore my work</div>
-
+        <a href="#design-case-studies" className={styles.explore}>
+          <div>explore my work</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -76,39 +74,44 @@ export default function Home() {
       />
 
       {/* ABOUT ME */}
-      <DefaultSection className="about" anchor="about" heading="About me">
-        <div className="about-wrapper">
-          <div className="about-text">
+      <DefaultSection
+        className={styles.about}
+        anchor="about"
+        heading="About me"
+      >
+        <div className={styles.aboutWrapper}>
+          <div className={styles.aboutText}>
             <img
               src={portrait}
               alt="Black and white illustration of Javier"
-              className="portrait"
+              className={styles.portrait}
             />
-            {aboutText.map((paragraph, index) => {
-              return (
-                <p className={index === 0 ? 'large-text' : ''} key={index}>
-                  {paragraph}
-                </p>
-              );
-            })}
+            {aboutText.map((paragraph, index) => (
+              <p
+                className={index === 0 ? `large-text ${styles.largeText}` : ''}
+                key={index}
+              >
+                {paragraph}
+              </p>
+            ))}
           </div>
-          <Timeline timeline={aboutTimeline} />
+          <Timeline timeline={aboutTimeline} styles={styles} />
         </div>
       </DefaultSection>
 
       {/* SKILLS */}
-      <DefaultSection className="about" heading="Skills">
-        <Skills skills={skills} />
+      <DefaultSection className={styles.about} heading="Skills">
+        <Skills skills={skills} styles={styles} />
       </DefaultSection>
 
       {/* DOWNLOAD RESUME */}
-      <DefaultSection className="about">
+      <DefaultSection className={styles.about}>
         <a
           href="/javier-quiroga-resume-2025.pdf"
           target="_blank"
-          className="resume"
+          className={styles.resumeLink}
         >
-          <button className="resume">
+          <button className={styles.resumeButton}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>file-document</title>
               <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
@@ -119,8 +122,12 @@ export default function Home() {
       </DefaultSection>
 
       {/* CONTACT */}
-      <DefaultSection className="about" anchor="contact" heading="Get in touch">
-        <div className="contact-links">
+      <DefaultSection
+        className={styles.about}
+        anchor="contact"
+        heading="Get in touch"
+      >
+        <div className={styles.contactLinks}>
           <a
             href="https://www.linkedin.com/in/javier-quiroga/"
             className="link"

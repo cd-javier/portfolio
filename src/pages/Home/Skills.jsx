@@ -1,26 +1,26 @@
-function SingleSkill({ skill }) {
+function SingleSkill({ skill, styles }) {
   return (
-    <div className="skills-single">
+    <div className={styles.skillsSingle}>
       <h3>
         {skill.category}
         {skill.subcategory && <br />}
         {skill.subcategory && `(${skill.subcategory})`}
       </h3>
       <ul>
-        {skill.items.map((item, idx) => {
-          return <li key={idx}>{item}</li>;
-        })}
+        {skill.items.map((item, idx) => (
+          <li key={idx}>{item}</li>
+        ))}
       </ul>
     </div>
   );
 }
 
-export default function Skills({ skills }) {
+export default function Skills({ skills, styles }) {
   return (
-    <div className="skills-grid">
-      {skills.map((skill, idx) => {
-        return <SingleSkill skill={skill} key={idx} />;
-      })}
+    <div className={styles.skillsGrid}>
+      {skills.map((skill, idx) => (
+        <SingleSkill skill={skill} styles={styles} key={idx} />
+      ))}
     </div>
   );
 }

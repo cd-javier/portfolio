@@ -1,7 +1,7 @@
 import DefaultSection from './DefaultSection';
 import DefaultLayout from './DefaultLayout';
 
-import './CaseStudyLayout.css';
+import styles from './CaseStudyLayout.module.css';
 
 function CaseStudyPart({ content }) {
   return content.map((element, index) => {
@@ -14,14 +14,21 @@ function CaseStudyPart({ content }) {
             src={element.src}
             alt={element.alt}
             key={index}
-            className={element.className && element.className}
-            style={element.style && element.style}
+            className={`${styles.caseStudyImg}${element.className ? ` ${element.className}` : ''}`}
+            style={element.style}
           />
         );
       case 'div':
         return (
-          <div className={element.className && element.className} key={index}>
-            {<CaseStudyPart content={element.content} />}
+          <div
+            className={
+              element.className === 'text-body'
+                ? styles.textBody
+                : element.className
+            }
+            key={index}
+          >
+            <CaseStudyPart content={element.content} />
           </div>
         );
       case 'ul':
@@ -40,7 +47,14 @@ function CaseStudyPart({ content }) {
         );
       default:
         return (
-          <Tag key={index} className={element.className && element.className}>
+          <Tag
+            key={index}
+            className={
+              element.className === 'hidden-heading'
+                ? styles.hiddenHeading
+                : element.className
+            }
+          >
             {element.content}
           </Tag>
         );
@@ -58,35 +72,35 @@ function CaseStudySection({ content }) {
 
 export default function CaseStudyLayout({
   caseStudy,
-  type,
+  themeClass,
   meta = {},
   og = {},
 }) {
   return (
-    <DefaultLayout pageType={`case-study ${type}`} meta={meta} og={og}>
-      <main>
+    <DefaultLayout pageType="case-study" meta={meta} og={og}>
+      <main className={`${styles.caseStudy} ${themeClass ?? ''}`}>
         <DefaultSection>
           <h1>{caseStudy.header.heading}</h1>
-          <div className="large-text">{caseStudy.header.subheading}</div>
-          <h2 className="hidden-heading">Brief</h2>
-          <div className="project-header">
+          <div className={`large-text ${styles.largeText}`}>
+            {caseStudy.header.subheading}
+          </div>
+          <h2 className={styles.hiddenHeading}>Brief</h2>
+          <div className={styles.projectHeader}>
             <img
               src={caseStudy.header.img.src}
               alt={caseStudy.header.img.alt}
             />
-            <div className="project-details">
-              {caseStudy.header.details.map((elm, idx) => {
-                return (
-                  <div className="detail-list" key={idx}>
-                    <h3>{elm.heading}</h3>
-                    <ul>
-                      {elm.content.map((elm, idx) => (
-                        <li key={idx}>{elm}</li>
-                      ))}
-                    </ul>
-                  </div>
-                );
-              })}
+            <div className={styles.projectDetails}>
+              {caseStudy.header.details.map((elm, idx) => (
+                <div className={styles.detailList} key={idx}>
+                  <h3>{elm.heading}</h3>
+                  <ul>
+                    {elm.content.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
           <CaseStudyPart content={caseStudy.header.content} />
