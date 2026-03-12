@@ -3,72 +3,120 @@ import DefaultLayout from './DefaultLayout';
 
 import styles from './CaseStudyLayout.module.css';
 
-function CaseStudyPart({ content }) {
-  return content.map((element, index) => {
-    const Tag = element.type;
+// ─── Typed content components ────────────────────────────────────────────────
 
-    switch (Tag) {
-      case 'img':
-        return (
-          <img
-            src={element.src}
-            alt={element.alt}
-            key={index}
-            className={`${styles.caseStudyImg}${element.className ? ` ${element.className}` : ''}`}
-            style={element.style}
-          />
-        );
-      case 'div':
-        return (
-          <div
-            className={
-              element.className === 'text-body'
-                ? styles.textBody
-                : element.className
-            }
-            key={index}
-          >
-            <CaseStudyPart content={element.content} />
-          </div>
-        );
-      case 'ul':
-        return (
-          <ul key={index}>
-            {element.content.map((elm, idx) => {
-              if (typeof elm === 'object')
-                return (
-                  <li key={idx}>
-                    <b>{elm.title}</b>: {elm.description}
-                  </li>
-                );
-              return <li key={idx}>{elm}</li>;
-            })}
-          </ul>
-        );
-      default:
-        return (
-          <Tag
-            key={index}
-            className={
-              element.className === 'hidden-heading'
-                ? styles.hiddenHeading
-                : element.className
-            }
-          >
-            {element.content}
-          </Tag>
-        );
-    }
-  });
+function TextBlock({ content }) {
+  return (
+    <div className={styles.textBody}>
+      {content.map((item, index) => {
+        const Tag = item.type;
+        return <Tag key={index}>{item.content}</Tag>;
+      })}
+    </div>
+  );
 }
 
-function CaseStudySection({ content }) {
+function CaseStudyImage({ src, alt, maxHeight }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={styles.caseStudyImg}
+      style={maxHeight ? { maxHeight } : undefined}
+    />
+  );
+}
+
+function BulletList({ items }) {
+  return (
+    <ul className={styles.bulletList}>
+      {items.map((item, index) => {
+        if (typeof item === 'object' && item.title) {
+          return (
+            <li key={index}>
+              <b>{item.title}</b>: {item.description}
+            </li>
+          );
+        }
+        return <li key={index}>{item}</li>;
+      })}
+    </ul>
+  );
+}
+
+// ─── Content block renderer ───────────────────────────────────────────────────
+
+function ContentBlock({ block }) {
+  switch (block.type) {
+    case 'text':
+      return (
+        <>
+          {block.heading && <h2>{block.heading}</h2>}
+          <TextBlock content={block.content} />
+        </>
+      );
+    case 'image':
+      return (
+        <CaseStudyImage
+          src={block.src}
+          alt={block.alt}
+          maxHeight={block.maxHeight}
+        />
+      );
+    case 'list':
+      return <BulletList items={block.items} />;
+    default:
+      return null;
+  }
+}
+
+// ─── Section ─────────────────────────────────────────────────────────────────
+
+function CaseStudySection({ heading, content }) {
   return (
     <DefaultSection>
-      <CaseStudyPart content={content} />
+      {heading && <h2>{heading}</h2>}
+      {content.map((block, index) => (
+        <ContentBlock key={index} block={block} />
+      ))}
     </DefaultSection>
   );
 }
+
+// ─── Header ──────────────────────────────────────────────────────────────────
+
+function CaseStudyHeader({ header }) {
+  return (
+    <DefaultSection>
+      <h1>{header.heading}</h1>
+      <div className={`large-text ${styles.largeText}`}>
+        {header.subheading}
+      </div>
+
+      <div className={styles.projectHeader}>
+        <img src={header.img.src} alt={header.img.alt} />
+        <div className={styles.projectDetails}>
+          {header.details.map((detail, index) => (
+            <div className={styles.detailList} key={index}>
+              <h3>{detail.heading}</h3>
+              <ul>
+                {detail.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {header.intro.map((block, index) => (
+        <ContentBlock key={index} block={block} />
+      ))}
+    </DefaultSection>
+  );
+}
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
 
 export default function CaseStudyLayout({
   caseStudy,
@@ -79,35 +127,14 @@ export default function CaseStudyLayout({
   return (
     <DefaultLayout pageType="case-study" meta={meta} og={og}>
       <main className={`${styles.caseStudy} ${themeClass ?? ''}`}>
-        <DefaultSection>
-          <h1>{caseStudy.header.heading}</h1>
-          <div className={`large-text ${styles.largeText}`}>
-            {caseStudy.header.subheading}
-          </div>
-          <h2 className={styles.hiddenHeading}>Brief</h2>
-          <div className={styles.projectHeader}>
-            <img
-              src={caseStudy.header.img.src}
-              alt={caseStudy.header.img.alt}
-            />
-            <div className={styles.projectDetails}>
-              {caseStudy.header.details.map((elm, idx) => (
-                <div className={styles.detailList} key={idx}>
-                  <h3>{elm.heading}</h3>
-                  <ul>
-                    {elm.content.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-          <CaseStudyPart content={caseStudy.header.content} />
-        </DefaultSection>
+        <CaseStudyHeader header={caseStudy.header} />
 
-        {caseStudy.content.map((section, idx) => (
-          <CaseStudySection key={idx} content={section} />
+        {caseStudy.sections.map((section, index) => (
+          <CaseStudySection
+            key={index}
+            heading={section.heading}
+            content={section.content}
+          />
         ))}
       </main>
     </DefaultLayout>
