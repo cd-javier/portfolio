@@ -10,11 +10,10 @@ export default function DefaultLayout({
   og = {},
 }) {
   useMetaTags(meta, og);
-  const isHomePage = pageType === 'home';
 
   return (
     <>
-      <Navbar isHomePage={isHomePage} />
+      <Navbar />
       <main className={`${pageType}${className ? ` ${className}` : ''}`}>
         {children}
       </main>

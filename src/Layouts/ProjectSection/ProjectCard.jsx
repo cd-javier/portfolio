@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import styles from './ProjectCard.module.css';
 
 export default function ProjectCard({ project, isCaseStudy }) {
   return (
     <div className={styles.projectCard}>
       {isCaseStudy ? (
-        <a href={project.link} aria-label={`View ${project.title} case study`}>
+        <Link to={project.link} aria-label={`View ${project.title} case study`}>
           <img src={project.img} alt="" />
-        </a>
+        </Link>
       ) : (
         <a
           href={project.link}
@@ -23,12 +24,12 @@ export default function ProjectCard({ project, isCaseStudy }) {
         <div className={styles.projectDesc}>{project.description}</div>
         <div className={styles.projectLinks}>
           {isCaseStudy ? (
-            <a
-              href={project.link}
+            <Link
+              to={project.link}
               aria-label={`View ${project.title} case study`}
             >
               READ CASE STUDY
-            </a>
+            </Link>
           ) : (
             <>
               <a href={project.repo} target="_blank" rel="noopener noreferrer">

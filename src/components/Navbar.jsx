@@ -1,20 +1,20 @@
 import { useState } from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 import styles from './Navbar.module.css';
 import logo from '../assets/img/logo.svg';
 
-function NavBarLink({ link, isHomePage, handleClick }) {
+function NavBarLink({ link, handleClick }) {
   return (
     <li>
-      {isHomePage ? (
-        <a href={link.src} className="link" onClick={handleClick}>
-          {link.name}
-        </a>
-      ) : (
-        <HashLink to={'/' + link.src} smooth className="link">
-          {link.name}
-        </HashLink>
-      )}
+      <NavHashLink
+        to={'/' + link.src}
+        smooth
+        onClick={handleClick}
+        className="link"
+      >
+        {link.name}
+      </NavHashLink>
     </li>
   );
 }
@@ -26,29 +26,24 @@ const links = [
   { name: 'Get in touch', src: '#contact' },
 ];
 
-export default function Navbar({ isHomePage }) {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={styles.navbarWrapper}>
       <div className={styles.navbar}>
-        {isHomePage ? (
-          <a className={styles.navLogo} href="#">
-            <img src={logo} alt="" fetchPriority="high" />
-            <div className={styles.navLogoText}>Javier Quiroga</div>
-          </a>
-        ) : (
-          <a className={styles.navLogo} href="/">
-            <img src={logo} alt="" fetchPriority="high" />
-            <div className={styles.navLogoText}>Javier Quiroga</div>
-          </a>
-        )}
+        <NavLink to="/" className={styles.navLogo}>
+          <img src={logo} alt="" fetchPriority="high" />
+          <div className={styles.navLogoText}>Javier Quiroga</div>
+        </NavLink>
+
         <nav>
           <div
             className={styles.navToggle}
             role="button"
             tabIndex="0"
             onClick={() => setIsOpen(!isOpen)}
+            onKeyDown={(e) => e.key === 'Enter' && setIsOpen(!isOpen)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <title>menu</title>
@@ -60,7 +55,6 @@ export default function Navbar({ isHomePage }) {
               <NavBarLink
                 handleClick={() => setIsOpen(false)}
                 link={link}
-                isHomePage={isHomePage}
                 key={index}
               />
             ))}

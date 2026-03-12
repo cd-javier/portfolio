@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --primary: #f9db47;
   --primary-dark: #101218;
