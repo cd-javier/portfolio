@@ -5,6 +5,7 @@ import useMetaTags from '../utils/useMetaTags';
 export default function DefaultLayout({
   children,
   pageType,
+  className,
   meta = {},
   og = {},
 }) {
@@ -14,7 +15,9 @@ export default function DefaultLayout({
   return (
     <>
       <Navbar isHomePage={isHomePage} />
-      <main className={pageType}>{children}</main>
+      <main className={`${pageType}${className ? ` ${className}` : ''}`}>
+        {children}
+      </main>
       <Footer />
     </>
   );

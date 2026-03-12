@@ -125,18 +125,21 @@ export default function CaseStudyLayout({
   og = {},
 }) {
   return (
-    <DefaultLayout pageType="case-study" meta={meta} og={og}>
-      <main className={`${styles.caseStudy} ${themeClass ?? ''}`}>
-        <CaseStudyHeader header={caseStudy.header} />
+    <DefaultLayout
+      pageType="case-study"
+      className={`${styles.caseStudy} ${themeClass ?? ''}`}
+      meta={meta}
+      og={og}
+    >
+      <CaseStudyHeader header={caseStudy.header} />
 
-        {caseStudy.sections.map((section, index) => (
-          <CaseStudySection
-            key={index}
-            heading={section.heading}
-            content={section.content}
-          />
-        ))}
-      </main>
+      {caseStudy.sections.map((section, index) => (
+        <CaseStudySection
+          key={index}
+          heading={section.heading}
+          content={section.content}
+        />
+      ))}
     </DefaultLayout>
   );
 }
