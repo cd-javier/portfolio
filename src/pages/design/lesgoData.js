@@ -26,9 +26,9 @@ export const og = {
 
 export const lesgoCaseStudy = {
   header: {
-    heading: 'Enhancing the user experience for a lifestyle app',
+    heading: 'Refining LESGO: A UX Journey to Revitalize Queer Connections',
     subheading:
-      'Collaborating with a startup in the wellness industry to transform a complex app into an intuitive and user-friendly experience',
+      'Teaming up with an innovative app to enhance aesthetics and usability in queer dating',
     img: { src: cover, alt: 'Decorative cover image for LESGO case study' },
     details: [
       {
