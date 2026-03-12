@@ -1,5 +1,9 @@
 /* HERO */
 
+:global(.home) h2 {
+  font-size: 2.5rem;
+}
+
 .hero {
   height: calc(100svh - 80px);
   min-height: 576px;
@@ -303,6 +307,15 @@
 
   .heroText {
     font-size: 1.5rem;
+  }
+
+  :global(.section-wrapper) {
+    padding: 3rem 1.5rem;
+  }
+
+  :global(.project-wrapper + .project-wrapper),
+  .about + .about {
+    padding-top: 0;
   }
 
   .aboutText {
