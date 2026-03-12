@@ -43,22 +43,3 @@ useEffect(() => {
     </>
   );
 }
-
-// HELPER FUNCTIONS
-
-function updateMetaTag(attrName, attrValue, content) {
-  let tag = document.querySelector(`meta[${attrName}="${attrValue}"]`);
-  if (!tag) {
-    tag = document.createElement('meta');
-    tag.setAttribute(attrName, attrValue);
-    document.head.appendChild(tag);
-  }
-  tag.setAttribute('content', content);
-}
-
-function removeMetaTag(attrName, attrValue) {
-  const tag = document.querySelector(`meta[${attrName}="${attrValue}"]`);
-  if (tag) {
-    tag.remove();
-  }
-}
