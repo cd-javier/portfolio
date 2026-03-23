@@ -1,0 +1,8 @@
+.matthewctfuller {
+  /* Matthew CT Fuller site palette — adjust as needed */
+  --main: #d7ab54; /* gold — used for headings and accents */
+  --bg-odd: #ece9e3; /* warm off-white */
+  --bg-even: #2c4438; /* deep velvety green */
+  --text-odd: #2c4438; /* green on light bg */
+  --text-even: #ece9e3; /* off-white on dark bg */
+}

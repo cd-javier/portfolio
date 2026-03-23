@@ -1,16 +1,46 @@
 import DefaultSection from './DefaultSection';
 import DefaultLayout from './DefaultLayout';
+import CodeBlock from '../components/CodeBlock';
 
 import styles from './CaseStudyLayout.module.css';
 
 // ─── Typed content components ────────────────────────────────────────────────
+
+function ParagraphContent({ content }) {
+  // Backwards compatible: plain string stays as-is
+  if (typeof content === 'string') return content;
+
+  // Array of inline parts: { type: 'text' | 'a', content, href?, external? }
+  return content.map((part, index) => {
+    if (part.type === 'a') {
+      return (
+        <a
+          key={index}
+          href={part.href}
+          className="link"
+          {...(part.external && {
+            target: '_blank',
+            rel: 'noopener noreferrer',
+          })}
+        >
+          {part.content}
+        </a>
+      );
+    }
+    return <span key={index}>{part.content}</span>;
+  });
+}
 
 function TextBlock({ content }) {
   return (
     <div className={styles.textBody}>
       {content.map((item, index) => {
         const Tag = item.type;
-        return <Tag key={index}>{item.content}</Tag>;
+        return (
+          <Tag key={index}>
+            <ParagraphContent content={item.content} />
+          </Tag>
+        );
       })}
     </div>
   );
@@ -65,6 +95,8 @@ function ContentBlock({ block }) {
       );
     case 'list':
       return <BulletList items={block.items} />;
+    case 'code':
+      return <CodeBlock code={block.code} language={block.language} />;
     default:
       return null;
   }
