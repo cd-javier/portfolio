@@ -10,6 +10,7 @@ import CopyLink from '../../components/CopyLink';
 import logo from '../../assets/img/logo.svg';
 import portrait from '../../assets/img/home/about-me-portrait.webp';
 import {
+  endToEndProjects,
   designCaseStudies,
   devProjects,
   meta,
@@ -54,6 +55,14 @@ export default function Home() {
           </svg>
         </a>
       </div>
+      {/* END-TO-END PROJECTS */}
+      <ProjectSection
+        heading="End-to-End Projects"
+        subheading="Designed and built from brief to deployment"
+        anchor="end-to-end-projects"
+        projects={endToEndProjects}
+        isCaseStudy={true}
+      />
 
       {/* DESIGN CASE STUDIES */}
       <ProjectSection

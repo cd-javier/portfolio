@@ -1,3 +1,5 @@
+// import matthewctfullerImg from '../../assets/img/home/matthewctfuller-cover.webp';
+
 import lesgoImg from '../../assets/img/home/lesgo-cover.webp';
 import zenlifeImg from '../../assets/img/home/zenlife-cover.webp';
 import grinpathImg from '../../assets/img/home/grinpath-cover.webp';
@@ -8,12 +10,23 @@ import weatherImg from '../../assets/img/home/weather-cover.webp';
 import libraryImg from '../../assets/img/home/library-cover.webp';
 import rpsImg from '../../assets/img/home/rps-cover.webp';
 
+export const endToEndProjects = [
+  {
+    title: 'Matthew CT Fuller',
+    tags: ['ux design', 'react', 'cms integration'],
+    description:
+      'Designing and building a CMS-managed personal brand site for an ICF-accredited coach. From Figma to production.',
+    link: '/end-to-end/matthewctfuller',
+    img: 'matthewctfullerImg',
+  },
+];
+
 export const designCaseStudies = [
   {
     title: 'LESGO',
     tags: ['usability', 'visual design', 'queer dating'],
     description:
-      'Revamping LESGO’s UX for its UK launch—enhancing identity, usability, and navigation with a user-centred approach.',
+      'Revamping LESGO’s UX for its UK launch. Enhancing identity, usability, and navigation with a user-centred approach.',
     link: '/design/lesgo',
     img: lesgoImg,
   },
@@ -34,6 +47,7 @@ export const designCaseStudies = [
     img: grinpathImg,
   },
 ];
+
 export const devProjects = [
   {
     title: 'Pride Memory Game',
