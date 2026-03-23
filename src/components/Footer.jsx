@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div>© 2025 Javier Quiroga</div>
+      <div>© {new Date().getFullYear()} Javier Quiroga</div>
       <a
         href="https://www.linkedin.com/in/javier-quiroga/"
         target="_blank"
