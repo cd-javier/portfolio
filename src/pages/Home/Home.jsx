@@ -116,7 +116,7 @@ export default function Home() {
       {/* DOWNLOAD RESUME */}
       <DefaultSection className={styles.about}>
         <a
-          href="/javier-quiroga-resume-2025.pdf"
+          href="/javier-quiroga.pdf"
           target="_blank"
           className={styles.resumeLink}
         >
