@@ -112,12 +112,12 @@ export const og = {
 };
 
 export const aboutText = [
-  'Hello, I’m Javier, a London-based UX/UI Designer and Web Developer, dedicated to crafting intuitive digital experiences and building functional, user-first solutions.',
-  "With nearly a decade of experience in the service and management industries, I've developed a keen insight into user behaviours and streamlined processes, insights that now inform my approach to digital product creation.",
-  'In 2022 I gathered the courage to quit my management job and complete a UX/UI Design Bootcamp at Ironhack, finally uniting my artistic side with my technical mind and passion for human experiences. There, I learned everything about Design Thinking and found my love for interface design and usability.',
-  "Since then, I've been collaborating with various startups as a freelancer, dedicated to improving the UX of their digital products. Creating wireframes, conducting thorough UX analysis, and enhancing visual design elements, I focus on making tech more accessible and user friendly.",
-  'At the end of 2024 I started training as a Full Stack developer with The Odin Project and discovered how incredibly creative and fulfilling writing code is, how exciting a blank code editor page is with a brain full of ideas.',
-  'When I’m not immersed in Figma or VSCode, you might find me playing board games, enjoying a glass of wine, or in the kitchen making up recipes.',
+  "Hello, I'm Javier, a London-based UX/UI Designer and Frontend Developer. I never quite managed to choose between design and code, so I just do both.",
+  "I spent the better part of a decade in hospitality and management across Spain, France, and Australia. You learn a lot about how people behave and what they actually need when you're on your feet dealing with them every day. That ended up being surprisingly good preparation for designing digital products.",
+  "In 2022 I quit my management job and did a UX/UI bootcamp at Ironhack. It's where my artistic side and my love for problem-solving finally ended up in the same room. Design Thinking, interface design, usability... it all clicked, and I haven't looked back since.",
+  'At the end of 2024 I started going deeper into development with The Odin Project. Writing code turns out to be just as creative as design. Just with more semicolons.',
+  "When I'm not in Figma or VSCode, you'll find me playing board games, enjoying a glass of wine, or in the kitchen making up recipes I'll probably attempt again anyway.",
+  'Currently open to UX/UI Designer, Frontend Developer, and hybrid roles in London. Reach out!',
 ];
 
 export const aboutTimeline = [
@@ -130,21 +130,27 @@ export const aboutTimeline = [
   { year: 2021, emoji: '👨', event: 'Became General Manager' },
   { year: 2022, emoji: '🎨', event: 'Studied UX Design' },
   { year: 2024, emoji: '👨‍💻', event: 'Started FullStack Dev Course' },
+  { year: 2025, emoji: '🚀', event: 'Shipped my first React app' },
 ];
 
 export const skills = [
   {
     category: 'Languages',
     subcategory: 'human',
-    items: ['Spanish - Native', 'English - Fluent', 'French - Fluent'],
+    items: [
+      'Spanish - Native',
+      'English - Fluent',
+      'French - Fluent',
+      'Japanese - Beginner',
+    ],
   },
   {
     category: 'Languages',
     subcategory: 'programming',
-    items: ['HTML', 'CSS', 'JavaScript'],
+    items: ['React', 'TypeScript', 'HTML', 'CSS'],
   },
   {
     category: 'Tools',
-    items: ['Figma', 'Adobe Creative Suite', 'VSCode', 'Git & GitHub', 'Jest'],
+    items: ['Figma', 'Adobe Creative Suite', 'VSCode', 'Sanity CMS', 'Jest'],
   },
 ];
