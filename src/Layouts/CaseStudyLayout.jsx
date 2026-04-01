@@ -1,6 +1,7 @@
 import DefaultSection from './DefaultSection';
 import DefaultLayout from './DefaultLayout';
 import CodeBlock from '../components/CodeBlock';
+import ScrollProgressBar from '../components/ScrollProgressBar';
 
 import styles from './CaseStudyLayout.module.css';
 
@@ -163,6 +164,8 @@ export default function CaseStudyLayout({
       meta={meta}
       og={og}
     >
+      <ScrollProgressBar />
+
       <CaseStudyHeader header={caseStudy.header} />
 
       {caseStudy.sections.map((section, index) => (

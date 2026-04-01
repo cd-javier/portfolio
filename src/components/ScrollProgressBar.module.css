@@ -1,0 +1,14 @@
+.track {
+  position: sticky;
+  top: 80px; /* navbar height */
+  left: 0;
+  width: 100vw;
+  height: 3px;
+  background-color: var(--bg-odd);
+  z-index: 2;
+}
+
+.bar {
+  height: 100%;
+  background-color: var(--main);
+}

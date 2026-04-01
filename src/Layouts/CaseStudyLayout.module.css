@@ -4,12 +4,12 @@
   color: var(--main);
 }
 
-.caseStudy :global(.section-wrapper):nth-child(odd) {
+.caseStudy :global(.section-wrapper):nth-child(even) {
   background-color: var(--bg-odd);
   color: var(--text-odd);
 }
 
-.caseStudy :global(.section-wrapper):nth-child(even) {
+.caseStudy :global(.section-wrapper):nth-child(odd) {
   background-color: var(--bg-even);
   color: var(--text-even);
 }
