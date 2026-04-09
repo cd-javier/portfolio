@@ -1,4 +1,4 @@
-// import matthewctfullerImg from '../../assets/img/home/matthewctfuller-cover.webp';
+import matthewctfullerImg from '../../assets/img/home/matthewctfuller-cover.webp';
 
 import lesgoImg from '../../assets/img/home/lesgo-cover.webp';
 import zenlifeImg from '../../assets/img/home/zenlife-cover.webp';
@@ -17,7 +17,7 @@ export const endToEndProjects = [
     description:
       'Designing and building a CMS-managed personal brand site for an ICF-accredited coach. From Figma to production.',
     link: '/end-to-end/matthewctfuller',
-    img: 'matthewctfullerImg',
+    img: matthewctfullerImg,
   },
 ];
 
@@ -113,10 +113,10 @@ export const og = {
 
 export const aboutText = [
   "Hello, I'm Javier, a London-based UX/UI Designer and Frontend Developer. I never quite managed to choose between design and code, so I just do both.",
-  "I spent the better part of a decade in hospitality and management across Spain, France, and Australia. You learn a lot about how people behave and what they actually need when you're on your feet dealing with them every day. That ended up being surprisingly good preparation for designing digital products.",
-  "In 2022 I quit my management job and did a UX/UI bootcamp at Ironhack. It's where my artistic side and my love for problem-solving finally ended up in the same room. Design Thinking, interface design, usability... it all clicked, and I haven't looked back since.",
-  'At the end of 2024 I started going deeper into development with The Odin Project. Writing code turns out to be just as creative as design. Just with more semicolons.',
-  "When I'm not in Figma or VSCode, you'll find me playing board games, enjoying a glass of wine, or in the kitchen making up recipes I'll probably attempt again anyway.",
+  'I spent the better part of a decade in hospitality and management across Spain, France, and Australia. Managing teams and running busy venues teaches you to watch how people actually behave, not how they say they will. That turned out to be great preparation for UX.',
+  "In 2022 I quit my management job and did a bootcamp at Ironhack. First time visual thinking and systems thinking had a reason to be in the same room. Design Thinking, interface design, usability... it all clicked. I'd found the thing I wanted to get good at.",
+  "Late 2024 I started going deeper into development with The Odin Project. Turns out writing code scratches the same itch as design. It's just less forgiving when you make a mistake. Being able to do both means I can take something from blank canvas to shipped product without handing it off to anyone.",
+  "When I'm not designing or building, I'm usually losing at board games, experimenting in the kitchen, or finding excuses to open good wine.",
   'Currently open to UX/UI Designer, Frontend Developer, and hybrid roles in London. Reach out!',
 ];
 

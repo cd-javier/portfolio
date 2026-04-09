@@ -1,14 +1,12 @@
 // Images — add imports here when assets are ready
-// import cover from '../../../assets/img/case-studies/matthewctfuller/01-cover.webp';
-// import whiteboard from '../../../assets/img/case-studies/matthewctfuller/02-whiteboard.webp';
-// import moodboard from '../../../assets/img/case-studies/matthewctfuller/03-moodboard.webp';
-// import siteStructure from '../../../assets/img/case-studies/matthewctfuller/04-site-structure.webp';
-// import wireframes from '../../../assets/img/case-studies/matthewctfuller/05-wireframes.webp';
-// import typography from '../../../assets/img/case-studies/matthewctfuller/06-typography.webp';
-// import colours from '../../../assets/img/case-studies/matthewctfuller/07-colours.webp';
-// import sanityStudio from '../../../assets/img/case-studies/matthewctfuller/08-sanity-studio.webp';
-// import finalSite from '../../../assets/img/case-studies/matthewctfuller/09-final-site.webp';
-// import beforeAfter from '../../../assets/img/case-studies/matthewctfuller/10-before-after.webp';
+import cover from '../../assets/img/case-studies/matthewctfuller/01-cover.webp';
+import siteStructure from '../../assets/img/case-studies/matthewctfuller/02-site-structure.webp';
+import wireframes from '../../assets/img/case-studies/matthewctfuller/03-wireframes.webp';
+import typography from '../../assets/img/case-studies/matthewctfuller/04-typography.webp';
+import colours from '../../assets/img/case-studies/matthewctfuller/05-colours.webp';
+import sanityStudio from '../../assets/img/case-studies/matthewctfuller/06-sanity-studio.webp';
+import finalSite from '../../assets/img/case-studies/matthewctfuller/07-final-site.webp';
+import beforeAfter from '../../assets/img/case-studies/matthewctfuller/08-before-after.webp';
 
 export const meta = {
   title:
@@ -32,7 +30,7 @@ export const matthewctfullerCaseStudy = {
     subheading:
       'From a Wix site that was "just fine" to a fully CMS-managed personal brand Designed, built, and deployed end-to-end.',
     img: {
-      src: '[cover image]',
+      src: cover,
       alt: 'Screenshot of the finished Matthew CT Fuller website',
     },
     details: [
@@ -96,11 +94,6 @@ export const matthewctfullerCaseStudy = {
           ],
         },
         {
-          type: 'image',
-          src: '[whiteboard session photo]',
-          alt: 'Photo of the whiteboard session during the kickoff meeting',
-        },
-        {
           type: 'text',
           content: [
             {
@@ -112,13 +105,9 @@ export const matthewctfullerCaseStudy = {
         },
         {
           type: 'image',
-          src: '[moodboard image, colours extracted from it including WBH colour]',
-          alt: 'Moodboard with colour palette extracted, including the Wellbeing Hypocrite Club colour',
-        },
-        {
-          type: 'image',
-          src: '[site structure diagram]',
+          src: siteStructure,
           alt: 'Diagram comparing the old site structure to the new one',
+          maxHeight: 350,
         },
       ],
     },
@@ -137,8 +126,9 @@ export const matthewctfullerCaseStudy = {
         },
         {
           type: 'image',
-          src: '[mid-fi wireframes]',
+          src: wireframes,
           alt: 'Mid-fidelity wireframes of the site in Figma',
+          maxHeight: 500,
         },
         {
           type: 'text',
@@ -156,12 +146,6 @@ export const matthewctfullerCaseStudy = {
       heading: 'visual identity',
       content: [
         {
-          type: 'image',
-          src: '[typography image]',
-          alt: 'Typography specimen showing Manrope at various weights and sizes',
-          maxHeight: 300,
-        },
-        {
           type: 'text',
           content: [
             {
@@ -169,6 +153,17 @@ export const matthewctfullerCaseStudy = {
               content:
                 'Manrope throughout, self-hosted, three weights. Clean enough for body text, enough personality to work at heading size. H1s are uppercase and bold, which gives the site a bit of weight without tipping into aggressive. It stays out of the way of the content, which is what you want on a personal brand site.',
             },
+          ],
+        },
+        {
+          type: 'image',
+          src: typography,
+          alt: 'Typography specimen showing Manrope at various weights and sizes',
+          maxHeight: 400,
+        },
+        {
+          type: 'text',
+          content: [
             {
               type: 'p',
               content:
@@ -183,7 +178,7 @@ export const matthewctfullerCaseStudy = {
         },
         {
           type: 'image',
-          src: '[web colours image]',
+          src: colours,
           alt: 'Web colour palette for the Matthew CT Fuller site',
           maxHeight: 200,
         },
@@ -210,17 +205,23 @@ export const matthewctfullerCaseStudy = {
               content:
                 "The content independence requirement shaped the whole technical approach. A static site with hardcoded copy would mean Matthew emailing me every time he needed to change or add anything. That's not a product, that's a support contract neither of us wanted.",
             },
+          ],
+        },
+        {
+          type: 'image',
+          src: sanityStudio,
+          alt: 'Screenshot of the Sanity Studio CMS interface',
+          maxHeight: 400,
+        },
+        {
+          type: 'text',
+          content: [
             {
               type: 'p',
               content:
                 "Sanity is a headless CMS, content lives separately from the code, and Matthew edits it through a studio interface without touching any files. I built the schemas to match exactly what he needed to control: headings, body text, images, testimonials, services, CTAs, and the links page. Then I populated every field myself using the content he'd written, and handed the keys over.",
             },
           ],
-        },
-        {
-          type: 'image',
-          src: '[screenshot of Sanity Studio]',
-          alt: 'Screenshot of the Sanity Studio CMS interface',
         },
       ],
     },
@@ -344,13 +345,9 @@ function changeToIndex(newIndex: number) {
         },
         {
           type: 'image',
-          src: '[screenshots of the finished website]',
-          alt: 'Screenshots of the finished Matthew CT Fuller website',
-        },
-        {
-          type: 'image',
-          src: '[before and after — old Wix site next to the new site]',
+          src: beforeAfter,
           alt: 'Side by side comparison of the old Wix site and the new custom site',
+          maxHeight: 500,
         },
       ],
     },
@@ -358,7 +355,7 @@ function changeToIndex(newIndex: number) {
       heading: 'what i learned',
       content: [
         {
-          type: 'text', 
+          type: 'text',
           content: [
             {
               type: 'p',
@@ -368,7 +365,7 @@ function changeToIndex(newIndex: number) {
             {
               type: 'p',
               content:
-                "That changes the stakes on decisions you might otherwise shrug off. Getting the Sanity schema right mattered because Matthew would live with whatever I built. Explaining a design decision clearly mattered because he needed to trust it, not just accept it.",
+                'That changes the stakes on decisions you might otherwise shrug off. Getting the Sanity schema right mattered because Matthew would live with whatever I built. Explaining a design decision clearly mattered because he needed to trust it, not just accept it.',
             },
             {
               type: 'p',
@@ -376,6 +373,12 @@ function changeToIndex(newIndex: number) {
                 "Technically: Sanity, GROQ, TypeGen, and my first production TypeScript project. The auto-generated types from the schema meant the frontend and CMS stayed in sync without any manual effort, something I'll be using again.",
             },
           ],
+        },
+        {
+          type: 'image',
+          src: finalSite,
+          alt: 'Screenshots of the finished Matthew CT Fuller website',
+          maxHeight: 500,
         },
       ],
     },

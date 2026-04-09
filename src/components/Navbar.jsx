@@ -20,7 +20,7 @@ function NavBarLink({ link, handleClick }) {
 }
 
 const links = [
-  { name: 'Design Case Studies', src: '#design-case-studies' },
+  { name: 'Case Studies', src: '#case-studies' },
   { name: 'Dev Projects', src: '#dev-projects' },
   { name: 'About', src: '#about' },
   { name: 'Get in touch', src: '#contact' },

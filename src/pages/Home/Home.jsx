@@ -59,7 +59,7 @@ export default function Home() {
       <ProjectSection
         heading="End-to-End Projects"
         subheading="Designed and built from brief to deployment"
-        anchor="end-to-end-projects"
+        anchor="case-studies"
         projects={endToEndProjects}
         isCaseStudy={true}
       />
@@ -68,7 +68,6 @@ export default function Home() {
       <ProjectSection
         heading="Design Case Studies"
         subheading="User-first design, backed by strategy and insight"
-        anchor="design-case-studies"
         projects={designCaseStudies}
         isCaseStudy={true}
       />
