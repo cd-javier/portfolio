@@ -39,7 +39,7 @@ export default function Home() {
           Blending creativity and logic to build better digital experiences.
         </div>
 
-        <a href="#design-case-studies" className={styles.explore}>
+        <a href="#case-studies" className={styles.explore}>
           <div>explore my work</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
