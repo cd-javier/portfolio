@@ -1,9 +1,13 @@
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div>© {new Date().getFullYear()} Javier Quiroga</div>
+      <div>
+        <Link to="/legal">Terms & Privacy</Link> © {new Date().getFullYear()}{' '}
+        Javier Quiroga
+      </div>
       <a
         href="https://www.linkedin.com/in/javier-quiroga/"
         target="_blank"
