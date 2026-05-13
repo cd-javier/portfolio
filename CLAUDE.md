@@ -11,7 +11,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Test your code before declaring done.
 - No sycophantic openers or closing fluff.
 - Keep solutions simple and direct.
-- Never run `npm run build` at the end of a task. Do not build unless explicitly asked.
+- Only run `npm run build` at the end of a task if it's strictly necessary, and never deploy.
+- When asked for a commit message, return only a conventional commit message with the changes made, do not make the commit.
+- When asked to commit, do it with a conventional commit message, and never sign them.
 
 ## Commands
 
