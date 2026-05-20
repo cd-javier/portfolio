@@ -1,4 +1,5 @@
 import matthewctfullerImg from '../../assets/img/home/matthewctfuller-cover.webp';
+import klearlabsImg from '../../assets/img/home/klearlabs-cover.webp';
 
 import lesgoImg from '../../assets/img/home/lesgo-cover.webp';
 import zenlifeImg from '../../assets/img/home/zenlife-cover.webp';
@@ -11,6 +12,14 @@ import libraryImg from '../../assets/img/home/library-cover.webp';
 import rpsImg from '../../assets/img/home/rps-cover.webp';
 
 export const endToEndProjects = [
+  {
+    title: 'Klear Labs',
+    tags: ['e-commerce', 'ai tooling', 'design systems'],
+    description:
+      'Designing and building a full website and online shop for a Notting Hill café using Lovable, from Figma to deployed product.',
+    link: '/end-to-end/klear-labs',
+    img: klearlabsImg,
+  },
   {
     title: 'Matthew CT Fuller',
     tags: ['ux design', 'react', 'cms integration'],
