@@ -30,13 +30,13 @@ export default function Home() {
           <div className={styles.heroHeading}>
             <h1>{`Javier Quiroga`}</h1>
             <div className={styles.heroSubheading}>
-              UX Designer &amp; Web Developer
+              UX/UI Designer who codes
             </div>
           </div>
         </div>
 
         <div className={styles.heroText}>
-          Blending creativity and logic to build better digital experiences.
+          From brief to deployment, no handoff required
         </div>
 
         <a href="#case-studies" className={styles.explore}>

@@ -121,12 +121,13 @@ export const og = {
 };
 
 export const aboutText = [
-  "Hello, I'm Javier, a London-based UX/UI Designer and Frontend Developer. I never quite managed to choose between design and code, so I just do both.",
-  'I spent the better part of a decade in hospitality and management across Spain, France, and Australia. Managing teams and running busy venues teaches you to watch how people actually behave, not how they say they will. That turned out to be great preparation for UX.',
-  "In 2022 I quit my management job and did a bootcamp at Ironhack. First time visual thinking and systems thinking had a reason to be in the same room. Design Thinking, interface design, usability... it all clicked. I'd found the thing I wanted to get good at.",
-  "Late 2024 I started going deeper into development with The Odin Project. Turns out writing code scratches the same itch as design. It's just less forgiving when you make a mistake. Being able to do both means I can take something from blank canvas to shipped product without handing it off to anyone.",
-  "When I'm not designing or building, I'm usually losing at board games, experimenting in the kitchen, or finding excuses to open good wine.",
-  'Currently open to UX/UI Designer, Frontend Developer, and hybrid roles in London. Reach out!',
+  "Hello, I'm Javier, a London-based UX/UI Designer who codes. I design websites and apps and then build them.",
+  'I spent about a decade in hospitality and management across Spain, France, Australia, and the UK. Managing teams and running busy venues is great for learning how people actually behave, not just how they say they behave, which turned out to be great preparation for UX.',
+  'In 2022 I quit my management job and enrolled on a UX/UI Design bootcamp with Ironhack. For the first time visual thinking and systems thinking united and I found the thing I wanted to get good at. Design thinking, interface design, usability... it all clicked, and it was exciting!.',
+  'Late 2024 I started going deeper into development with The Odin Project. Turns out writing code scratches the same itch as design: solving a problem from a blank page. Being able to do both means I can take something from concept to shipped product, no handoff required.',
+  "When I'm not designing or building, you'll probably find me in the kitchen coming up with recipes, reading a book, or learning Japanese.",
+  'Currently open to UX/UI Designer and Design Engineer roles in London and remote, and always up for collaborating on interesting projects.',
+  'Reach out!',
 ];
 
 export const aboutTimeline = [
@@ -160,6 +161,12 @@ export const skills = [
   },
   {
     category: 'Tools',
-    items: ['Figma', 'Adobe Creative Suite', 'VSCode', 'Sanity CMS', 'Jest'],
+    items: [
+      'Figma',
+      'Adobe Creative Suite',
+      'VSCode',
+      'Sanity CMS',
+      'Claude Code / Lovable',
+    ],
   },
 ];
